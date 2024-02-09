@@ -262,14 +262,15 @@ The project was created in Gitpod using the Code Institute Gitpod Full Template 
 ## **Project Setup**
 
 1. Install **Django** and **gunicorn**:
-   - `pip install django gunicorn`
+   - `pip3 install pip3 install 'django<4'`
+   - `pip3 install django gunicorn`
 2. Install supporting **libraries**:
-   - `pip install dj_database_url psycopg2`
+   - `pip3 install dj_database_url psycopg2`
    - 
 3. Create **requirements.txt** file:
-   - `pip freeze --local > requirements.txt`
+   - `pip3 freeze --local > requirements.txt`
 4. Create a Django project:
-   - `django-admin startproject <name>` (in my case `<name>` was *mini_m*)
+   - `django-admin startproject <name> .`  (in my case `<name>` was *mini_m*)
 5. Test to see if everything worked:
    - `python manage.py runserver`
 
