@@ -65,8 +65,9 @@
             {% include 'includes/main-nav.html' %}
           </div>
 
-          <div class="d-lg-flex col-md-4 nav-icons-small justify-content-center">
-            <ul class="list-inline list-unstyled text-center text-lg-right my-0 nav-icons">
+          <div class="d-lg-flex col-sm-8 col-lg-4 nav-icons-small justify-content-start justify-content-lg-end pe-xl-2">
+            {% include 'includes/mobile-top-nav.html' %}
+            <ul class="list-inline list-unstyled text-center text-lg-right my-0 nav-icons d-none d-lg-block ">
                 <li class="list-inline-item dropdown ms-3a">
                         <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#search-bar" aria-controls="search-bar" aria-expanded="false" aria-label="Search">
                             <div class="text-center icon">
