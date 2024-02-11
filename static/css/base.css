@@ -26,10 +26,11 @@ ul {
   --dark-blue: #051417;
   --blue: #1a5eb3;
   --yellow: #ffc800;
+  --orange: #ffa200;
   --green: #80B500;
   --light-pink: #f7d9cd;
   --dark-pink: #e9bba8;
-  --gradient: linear-gradient(90deg, #800080, #e74536, #800080);
+  --gradient: linear-gradient(90deg, #ffc800, #ffb800, #e61a21);
 }
 /* ---------------  /End Roots  -------------- */
 
@@ -46,3 +47,35 @@ body {
     background-color: var(--light-pink);
     min-height: 100vh;
 }
+
+/* Colors */
+.button-green {
+    color: var(--white);
+    background-color: var(--green);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 40px;
+    border-radius: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    &:hover{
+        background-color:  var(--white);
+        color: var(--black);
+        border: 1px solid var(--green);
+    }
+    transition: all 0.2s ease 0s;
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.delivery-bg {
+    background-color: var(--black);
+}
+
+.red {
+    background-color: var(--red);
+}
+
