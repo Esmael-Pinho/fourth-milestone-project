@@ -132,6 +132,40 @@
                 </div>
             </div>
         </div>
+        <div id="delivery-banner" class="row text-center justify-content-center">
+          <div id="slider-container" class="col-sm-6 col-lg-8 bg-black text-white">
+            <div id="timer">
+              <div class="row justify-content-center sliding-text">
+                <div class="col-6 mt-5 d-none d-lg-block">
+                  <h1 class="delivery-font my-1 text-end"> Free delivery in: </h1>
+                </div>
+                <div class="col d-lg-none">
+                  <h4 class="logo-font my-1">Free delivery on orders over £{{ free_shipping_threshold }}!</h4>    
+                </div>
+                <div class="col-6 d-none d-lg-block text-start">
+                  <div class="countdown-container">
+                    <div class="countdown">
+                      <h3 id="days"></h3>
+                      <p>days</p>
+                    </div>
+                    <div class="countdown">
+                      <h3 id="hours"></h3>
+                      <p>hrs</p>
+                    </div>
+                    <div class="countdown">
+                      <h3 id="minutes"></h3>
+                      <p>mins</p>
+                    </div>
+                    <div class="countdown">
+                      <h3 id="seconds"></h3>
+                      <p>secs</p>
+                    </div>
+                  </div> 
+                </div>
+              </div> 
+            </div>        
+          </div>            
+        </div>
     </header>
 
     {% if messages %}
@@ -146,6 +180,7 @@
 
     
     {% block postloadjs %}
+      <script type="text/javascript" src="{% static 'js/base.js'%}"></script>
     {% endblock %}
 
     

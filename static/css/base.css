@@ -79,3 +79,56 @@ body {
     background-color: var(--red);
 }
 
+.sliding-text {
+    position: relative;
+    animation: slide 15s linear infinite;
+    width: inherit;
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    90% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(-100%);
+      animation-delay: 1s;
+    }
+}
+
+.bg-black {
+    border-radius: 15px;
+    overflow-x: hidden;
+}
+
+.countdown-container {
+    margin-top: 0;
+    padding: 20px 15px 0px;
+    box-shadow: none;
+    display: inline-block;
+
+    .countdown {
+        margin-right: 10px;
+        margin-top: 10px;
+        text-align: center;
+        display: inline-block;
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            height: 45px;
+            width: 45px;
+            line-height: 45px;
+            background-color: var(--white);
+            border-radius: 100%;
+            color: var(--black);
+        }
+
+        p {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    }
+}
