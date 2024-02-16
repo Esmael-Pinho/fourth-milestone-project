@@ -1,30 +1,77 @@
-// Set the date we're counting down to
-var countDownDate = new Date("Mar 5, 2034 16:00:00").getTime();
+$(document).ready(function() {
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+    // Click event for the "Search" link
+    $(".list-inline-item.dropdown a.nav-link").on("click", function(e) {
+        // Toggle the collapse class on the navbar
+        $(".navbar-nav").toggleClass("d-none");
 
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Update each countdown div with its corresponding values
-  $("#days").html(days);
-  $("#hours").html(hours);
-  $("#minutes").html(minutes);
-  $("#seconds").html(seconds);
+        // Toggle the collapse class on the search bar
+        $("#search-bar").toggleClass("collapse");
 
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    $("#days, #hours, #minutes, #seconds").html("Free delivery for all orders in effect");
-  }
-}, 1000);
+        // Toggle the 'aria-expanded' attribute
+        $(this).attr("aria-expanded", function (i, attr) {
+            return attr === "true" ? "false" : "true";
+        });
+    });
+
+
+    // Set the date we're counting down to
+    var countDownDate = new Date("Mar 1, 2024 16:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+        
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+        
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+    // Update each countdown div with its corresponding values
+    $("#days").html(days);
+    $("#hours").html(hours);
+    $("#minutes").html(minutes);
+    $("#seconds").html(seconds);
+
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        $("#days, #hours, #minutes, #seconds").html("Free delivery for all orders in effect");
+    }
+    }, 1000);
+
+
+
+    var icon1 = $(".icon-1");
+    var icon2 = $(".icon-2");
+
+    // Function to show the next icon and hide the current one
+    function showNextIcon(current, next) {
+        current.hide();
+        next.show();
+    }
+
+    // Bind the animationend event for icon-1
+    icon1.on('animationend', function() {
+        showNextIcon(icon1, icon2);
+        icon2.css('animation', 'none'); // Reset animation
+        icon2.show().css('animation', 'growIcon2 10s forwards');
+    });
+
+    // Bind the animationend event for icon-2
+    icon2.on('animationend', function() {
+        showNextIcon(icon2, icon1);
+        icon1.css('animation', 'none'); // Reset animation
+        icon1.show().css('animation', 'growIcon1 11s forwards');
+    });
+
+    // Initial animations
+    icon1.css('animation', 'growIcon1 11s forwards');
+    
+});

@@ -62,6 +62,24 @@
                 </div>
               </div>
             </a>
+            <div class="container-fluid collapse" id="search-bar">
+              <div class="row justify-content-center">
+                  <div class="col-12  my-auto py-0 ">
+                      <form method="GET" action="">
+                          <div class="input-group w-100">
+                              <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site" >
+                              <div class="input-group-append">
+                                  <button class="form-control btn btn-black border border-black rounded-0 search-form" type="submit">
+                                      <span class="icon">
+                                          <i class="fas fa-search"></i>
+                                      </span>
+                                  </button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+            </div>
             {% include 'includes/main-nav.html' %}
           </div>
 
@@ -114,55 +132,39 @@
           </div>
         </div>
       </nav>
-      <div class="container-fluid collapse" id="search-bar">
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-10 col-md-8 col-lg-5 my-auto py-1 py-lg-0">
-                    <form method="GET" action="">
-                        <div class="input-group w-100">
-                            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site" >
-                            <div class="input-group-append">
-                                <button class="form-control btn btn-black border border-black rounded-0 search-form" type="submit">
-                                    <span class="icon">
-                                        <i class="fas fa-search"></i>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
         <div id="delivery-banner" class="row text-center justify-content-center">
-          <div id="slider-container" class="col-sm-6 col-lg-8 bg-black text-white">
+          <div id="slider-container" class="col-10 bg-black text-white">
             <div id="timer">
+              <div class="delivery-icon icon-1"><i class="fa-solid fa-triangle-exclamation"></i></div>
               <div class="row justify-content-center sliding-text">
-                <div class="col-6 mt-5 d-none d-lg-block">
-                  <h1 class="delivery-font my-1 text-end"> Free delivery in: </h1>
+                <div class="col-6 mt-4 d-none d-lg-block">
+                  <h2 class="delivery-font my-1 text-end"> <span class="green">Free Delivery</span> <span>for all orders</span> in: </h2>
                 </div>
                 <div class="col d-lg-none">
-                  <h4 class="logo-font my-1">Free delivery on orders over £{{ free_shipping_threshold }}!</h4>    
+                  <h4 class="logo-font my-1"><span class="green">Free delivery</span> on orders over <span class="yellow1">£{{ free_shipping_threshold }}</span> !</h4>    
                 </div>
                 <div class="col-6 d-none d-lg-block text-start">
                   <div class="countdown-container">
                     <div class="countdown">
-                      <h3 id="days"></h3>
+                      <h3 id="days" class="bold"></h3>
                       <p>days</p>
                     </div>
                     <div class="countdown">
-                      <h3 id="hours"></h3>
+                      <h3 id="hours" class="bold"></h3>
                       <p>hrs</p>
                     </div>
                     <div class="countdown">
-                      <h3 id="minutes"></h3>
+                      <h3 id="minutes" class="bold"></h3>
                       <p>mins</p>
                     </div>
                     <div class="countdown">
-                      <h3 id="seconds"></h3>
+                      <h3 id="seconds" class="bold"></h3>
                       <p>secs</p>
                     </div>
                   </div> 
                 </div>
               </div> 
+              <div class="delivery-icon icon-2"><i class="fa-solid fa-triangle-exclamation"></i></div>
             </div>        
           </div>            
         </div>
