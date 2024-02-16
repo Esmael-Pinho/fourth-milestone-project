@@ -53,6 +53,36 @@ body {
 }
 
 /* Colors */
+
+.glow-1 {
+    animation: glow1 1s ease-in-out infinite alternate;
+}
+
+.glow-2 {
+    animation: glow2 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow1 {
+    from {
+      text-shadow: 0 0 10px #80B500, 0 0 20px #80B500, 0 0 30px #80B500, 0 0 40px #80B500, 0 0 50px #80B500, 0 0 60px #80B500, 0 0 70px #80B500;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #8efe06, 0 0 30px #8efe06, 0 0 40px #8efe06, 0 0 50px #8efe06, 0 0 60px #8efe06, 0 0 70px #8efe06, 0 0 80px #8efe06;
+    }
+}
+
+@keyframes glow2 {
+    from {
+      text-shadow: 0 0 10px #ffb700, 0 0 20px #ffb700, 0 0 30px #ffb700, 0 0 40px #ffb700, 0 0 50px #ffb700, 0 0 60px #ffb700, 0 0 70px #ffb700;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #ffa200, 0 0 30px #ffa200, 0 0 40px #ffa200, 0 0 50px #ffa200, 0 0 60px #ffa200, 0 0 70px #ffa200, 0 0 80px #ffa200;
+    }
+}
+
+
 .button-green {
     color: var(--white);
     background-color: var(--green);
@@ -139,7 +169,7 @@ body {
             height: 35px;
             width: 35px;
             line-height: 35px;
-            background-color: var(--yellow);
+            background-color: var(--green);
             border-radius: 100%;
             color: var(--white);
         }

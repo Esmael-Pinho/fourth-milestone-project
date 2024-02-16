@@ -48,30 +48,6 @@ $(document).ready(function() {
 
 
 
-    var icon1 = $(".icon-1");
-    var icon2 = $(".icon-2");
-
-    // Function to show the next icon and hide the current one
-    function showNextIcon(current, next) {
-        current.hide();
-        next.show();
-    }
-
-    // Bind the animationend event for icon-1
-    icon1.on('animationend', function() {
-        showNextIcon(icon1, icon2);
-        icon2.css('animation', 'none'); // Reset animation
-        icon2.show().css('animation', 'growIcon2 10s forwards');
-    });
-
-    // Bind the animationend event for icon-2
-    icon2.on('animationend', function() {
-        showNextIcon(icon2, icon1);
-        icon1.css('animation', 'none'); // Reset animation
-        icon1.show().css('animation', 'growIcon1 11s forwards');
-    });
-
-    // Initial animations
-    icon1.css('animation', 'growIcon1 11s forwards');
+    
     
 });
