@@ -12,8 +12,8 @@
 .section-title {
     font-family: 'Oswald', monospace, sans-serif;
     font-size: 70px;
-    margin-bottom: 2rem;
-    margin-top: 10rem;
+    margin-bottom: 2.5rem;
+    margin-top: 11rem;
 }
 
 .product-container {
@@ -59,7 +59,7 @@
     background-color: var(--red);
 }
 
-.approved {
+.popular {
     background-color: darkblue;
 }
 
@@ -166,7 +166,27 @@
     color: var(--green);
 }
 
+.red1 {
+    color: var(--red);
+}
+
 .product-rating ul,
 .product-title-area h2 {
     margin-bottom: 0;
+}
+
+
+
+
+
+@media (max-width: 992px) {
+    .section-title {
+        margin-top: 7.5rem;
+    }
+
+    .card-g:hover .product-hover-action {
+        visibility: hidden;
+    }
+
+    
 }

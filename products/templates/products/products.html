@@ -37,11 +37,11 @@
                                     <div class="product-badge">
                                         <ul class="badge-c">
                                             {% if forloop.counter|divisibleby:4 %}
-                                                {% with 'super' as badge %}
+                                                {% with 'super deal' as badge %}
                                                     <li class="badge {{ badge }}">{{ badge|title }}</li>
                                                 {% endwith %}
                                             {% elif forloop.counter|divisibleby:3 %}
-                                                {% with 'special' as badge %}
+                                                {% with 'special deal' as badge %}
                                                     <li class="badge {{ badge }}">{{ badge|title }}</li>
                                                 {% endwith %}
                                             {% elif forloop.counter|divisibleby:2 %}
@@ -53,7 +53,7 @@
                                                     <li class="badge {{ badge }}">{{ badge|title }}</li>
                                                 {% endwith %}
                                             {% else %}
-                                                {% with 'approved' as badge %}
+                                                {% with 'popular' as badge %}
                                                     <li class="badge {{ badge }}">{{ badge|title }}</li>
                                                 {% endwith %}
                                             {% endif %}
@@ -104,7 +104,7 @@
                                         <div class="col-12">
                                             <div class="product-price text-center">
                                                 <span>£{{ product.price }}</span>
-                                                <del class="yellow1">£{{ product.price|add:product.price|floatformat:2 }}</del>
+                                                <del class="red1">£{{ product.price|add:product.price|floatformat:2 }}</del>
                                             </div>                                                             
                                         </div>
                                     </div>
