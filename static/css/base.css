@@ -45,7 +45,13 @@ body {
     font-family: "Ubuntu", 'Oswald', monospace, sans-serif;
     margin: 0 auto;
     background-color: var(--light-pink);
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 .bold {
@@ -228,4 +234,46 @@ body {
     .delivery-icon i, .sliding-text {
         animation: none;
     }
+}
+
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 3.5rem;
+    position: relative; 
+}
+
+.footer-container {
+    min-height: 5vh; 
+}
+
+.footer-content {
+    padding-top: 20px;
+}
+
+.yellow, .btn-social:hover, .footer-cont:hover {
+    color: var(--green);
+}
+
+.footer-cont,
+.web-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Footer Links */
+.btn-social {
+    height: 2.85rem;
+    width: 2.85rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.btn-social i {
+    font-size: 25px;
 }

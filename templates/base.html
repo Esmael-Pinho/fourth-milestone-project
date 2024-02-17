@@ -173,14 +173,48 @@
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
-
-    {% block page_header %}
-    {% endblock %}
-
-    {% block content %}
-    {% endblock %}
+    <main>
 
     
+      {% block page_header %}
+      {% endblock %}
+
+      {% block content %}
+      {% endblock %}
+    </main>
+    <footer class="footer py-2 bg-body-tertiary">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">
+                    <span class="bold yellow web-name">Mini Tic</span> <span>&copy; All rights reserved 2024</span>
+                </div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i>
+                        <span class="sr-only">Twitter Link</span>
+                    </a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://en-gb.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i>
+                        <span class="sr-only">Facebook Link</span>
+                    </a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://uk.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i>
+                        <span class="sr-only">LinkedIn Link</span>
+                    </a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i>
+                        <span class="sr-only">InstagramLink</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="">
+                        <span class="bold footer-cont">Contact Us</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     {% block postloadjs %}
       <script type="text/javascript" src="{% static 'js/base.js'%}"></script>
     {% endblock %}
