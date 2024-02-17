@@ -136,3 +136,37 @@
 .card-body {
     height: 200px;
 }
+
+.product-title a {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.product-title a:hover,
+.ratings a:hover,
+.share.list-unstyled li a:hover,
+.green {
+    color: var(--green)
+}
+
+.product-rating {
+    margin-top: 1.5rem;
+}
+
+.ratings a {
+    color: var(--orange);
+}
+
+.product-price {
+    font-size: 30px; 
+    font-family: 'Oswald', monospace, sans-serif;
+    color: var(--green);
+}
+
+.product-rating ul,
+.product-title-area h2 {
+    margin-bottom: 0;
+}
