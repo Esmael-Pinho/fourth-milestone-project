@@ -1,0 +1,60 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "fruits_and_vegetables",
+        "friendly_name": "Fruits and Vegetables"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "pizzas",
+        "friendly_name": "Pizzas"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "cakes",
+        "friendly_name": "Cakes"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "chocolates",
+        "friendly_name": "Chocolates"
+      }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+          "name": "drinks",
+          "friendly_name": "Drinks"
+        }
+    },
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "homemade",
+        "friendly_name": "Homemade"
+      }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+          "name": "bread",
+          "friendly_name": "Bread"
+        }
+      }
+    
+  ]
+  

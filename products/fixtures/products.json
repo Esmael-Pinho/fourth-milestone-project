@@ -1,0 +1,1199 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "name": "Fresh Kiwi (each)",
+            "description": "Juicy and vibrant kiwi, packed with vitamin C and a sweet-tart flavor.",
+            "price": 1.49,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://healthjade.net/wp-content/uploads/2017/09/kiwi-fruit.jpg",
+            "image": "fresh_kiwi.jpg"
+        }
+    },
+      {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "name": "Sweet Peaches (5 pack)",
+            "description": "Ripe and succulent peaches, perfect for snacking or adding to desserts.",
+            "price": 2.29,
+            "category": 1,
+            "rating": 4.8,
+            "image_url": "https://images5.alphacoders.com/433/thumb-1920-433126.jpg",
+            "image": "sweet_peaches.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "name": "Golden Banana (6 pack)",
+            "description": "Delicious and energy-boosting golden bananas with a creamy texture.",
+            "price": 1.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "https://images.heb.com/is/image/HEBGrocery/000377497",
+            "image": "golden_bananas.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "name": "Asda Carrots (500g)",
+            "description": "Fresh and crunchy carrots. Ideal for snacks or as a side dish.",
+            "price": 1.49,
+            "category": 1,
+            "rating": 4.5,
+            "image_url": "https://ui.assets-asda.com/dm/asdagroceries/5054781511946_T1?defaultImage=asdagroceries/noImage&resMode=sharp2&id=URdS92&fmt=webp&dpr=off&fit=constrain,1&wid=864&hei=864",
+            "image": "carrots.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "name": "Single Pear",
+            "description": "Sweet and juicy pears. Perfect for a refreshing snack or dessert.",
+            "price": 2.99,
+            "category": 1,
+            "rating": 4.8,
+            "image_url": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/11/06/17/pears3.jpg",
+            "image": "pears.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "name": "Pineapple",
+            "description": "Delicious and tropical pineapple. Great for cocktails or fruit salads.",
+            "price": 3.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "https://www.dietandi.com/wp-content/uploads/2014/02/slice-of-pineapple.jpg",
+            "image": "pineapple.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "name": "Orange (1kg bag)",
+            "description": "Sweet and tangy oranges. A classic citrus fruit for snacks or juicing.",
+            "price": 1.79,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://freepngimg.com/thumb/orange/4-orange-png-image-download.png",
+            "image": "orange.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "name": " Seedless Grapes (800g)",
+            "description": "Plump and juicy grapes. Perfect for a healthy and tasty snack.",
+            "price": 4.49,
+            "category": 1,
+            "rating": 4.9,
+            "image_url": "https://i5.walmartimages.ca/images/Enlarge/557/738/6000200557738.jpg",
+            "image": "grapes.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "name": "Strawberries (700g)",
+            "description": "Sweet and succulent strawberries. Great for desserts or salads.",
+            "price": 9.29,
+            "category": 1,
+            "rating": 4.8,
+            "image_url": "https://freepngimg.com/thumb/strawberry/59-strawberry-png-images.png",
+            "image": "strawberries.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "name": "Tomatoes on the vine (pack of 5)",
+            "description": "Fresh and ripe tomatoes. Ideal for salads, sandwiches, and cooking.",
+            "price": 2.49,
+            "category": 1,
+            "rating": 4.5,
+            "image_url": "https://www.publicdomainpictures.net/pictures/30000/velka/fresh-tomatoes.jpg",
+            "image": "tomatoes.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "name": "Asda Onions (1kg)",
+            "description": "Crisp and flavorful onions. A versatile ingredient for various dishes.",
+            "price": 1.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://ui.assets-asda.com/dm/asdagroceries/5050854514906_T1?defaultImage=asdagroceries/noImage&resMode=sharp2&id=2ZFRt0&fmt=webp&dpr=off&fit=constrain,1&wid=864&hei=864&qlt=75",
+            "image": "onions.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "name": "Broccoli (400g)",
+            "description": "Nutrient-packed broccoli. Great for stir-fries and side dishes.",
+            "price": 2.79,
+            "category": 1,
+            "rating": 4.4,
+            "image_url": "https://abzagro.com/wp-content/uploads/2020/09/Broccoli.jpg",
+            "image": "broccoli.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "name": "Cucumbers (500g)",
+            "description": "Cool and refreshing cucumbers. Perfect for salads and snacks.",
+            "price": 1.59,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "https://5.imimg.com/data5/GT/KS/MY-26989188/fresh-cucumber-500x500.jpg",
+            "image": "cucumbers.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "name": "Bell Pepper",
+            "description": "Colorful and crisp bell peppers. Great for salads and cooking.",
+            "price": 2.29,
+            "category": 1,
+            "rating": 4.5,
+            "image_url": "https://www.lipmanfamilyfarms.com/wp-content/uploads/2020/09/Colored-Pepper-hero@2x.png",
+            "image": "bell_peppers.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "name": "Spinach (700g)",
+            "description": "Nutrient-rich spinach. Ideal for salads, smoothies, and cooking.",
+            "price": 3.19,
+            "category": 1,
+            "rating": 4.8,
+            "image_url": "https://images-on-off.com/images/89/shpinatagrotexnikavirashivaniyaisorta-69a58fe8.jpg",
+            "image": "spinach.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "name": "Avocado",
+            "description": "Creamy and nutritious avocados. Perfect for salads and guacamole.",
+            "price": 4.99,
+            "category": 1,
+            "rating": 4.9,
+            "image_url": "https://clausennursery.com/media/zoo/images/avocado-wurtz-469135_f32a9a9628b0a98521f238c6a1b2d013.jpg",
+            "image": "avocado.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "name": "Mango",
+            "description": "Sweet and tropical mango. Great for snacking or adding to fruit salads.",
+            "price": 3.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "https://itdelice.com/wp-content/uploads/2017/04/Mangoes.jpg",
+            "image": "mango.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "name": "Potatoes (1kg)",
+            "description": "Versatile and hearty potatoes. Ideal for roasting, mashing, or frying.",
+            "price": 2.69,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://cdn.shopify.com/s/files/1/0358/1368/7431/products/Chat_1024x1024_37079e2b-f119-4d3b-a8cd-40d44161501f_grande.jpg?v=1585133903",
+            "image": "potatoes.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "name": "Vegetarian Pesto Pizza",
+            "description": "A flavorful combination of pesto sauce, cherry tomatoes, and assorted veggies.",
+            "price": 11.99,
+            "category": 2,
+            "rating": 4.8,
+            "image_url": "https://itsallgoodvegan.com/wp-content/uploads/2020/06/IMG_5449.jpg",
+            "image": "vegetarian_pesto_pizza.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "name": "Spicy BBQ Bacon Pizza",
+            "description": "Bold and spicy BBQ sauce, crispy bacon, red onions, and jalapeños on a thin crust.",
+            "price": 13.49,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "https://suebeehomemaker.com/wp-content/uploads/2021/08/bbq-chicken-bacon-pizza-6.jpg",
+            "image": "spicy_bbq_bacon_pizza.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "name": "Mushroom Truffle Delight",
+            "description": "Indulge in the earthy flavors of mushrooms and truffle oil on a gourmet crust.",
+            "price": 14.99,
+            "category": 6,
+            "rating": 4.9,
+            "image_url": "https://threebigbites.com/wp-content/uploads/2019/01/FoodPizzaTruffleLeekBirthday.jpg",
+            "image": "mushroom_truffle_delight.jpg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "name": "Margherita Pizza",
+            "description": "Classic Margherita pizza with tomato, mozzarella, and basil.",
+            "price": 9.99,
+            "category": 2,
+            "rating": 4.5,
+            "image_url": "https://i.pinimg.com/originals/2e/0e/22/2e0e22393639e9641db66f4cdedd67ad.jpg",
+            "image": "margherita_pizza.jpg"
+        }
+    },
+    {
+      "pk": 23,
+      "model": "products.product",
+      "fields": {
+            "name": "Pepperoni Pizza",
+            "description": "Delicious pepperoni pizza with gooey cheese and savory pepperoni slices.",
+            "price": 11.99,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "https://riotfest.org/wp-content/uploads/2016/10/Pizza-by-the-Harbour-in-Noblesville-IN_Pepperoni-and-Extra-Cheese-Pizza.jpg",
+            "image": "pepperoni_pizza.jpg"
+      }
+    },
+    {
+      "pk": 24,
+      "model": "products.product",
+      "fields": {
+            "name": "Vegetarian Pizza",
+            "description": "Loaded with a variety of fresh vegetables and melted cheese. A veggie lover's delight.",
+            "price": 10.99,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": "https://www.vegantravel.com/wp-content/uploads/2018/12/Whole-Foods.jpg",
+            "image": "vegetarian_pizza.jpg"
+      }
+    },
+    {
+      "pk": 25,
+      "model": "products.product",
+      "fields": {
+            "name": "Hawaiian Pizza",
+            "description": "Sweet and savory Hawaiian pizza with ham, pineapple, and cheese.",
+            "price": 12.99,
+            "category": 2,
+            "rating": 4.8,
+            "image_url": "https://www.waiter.com/blog/wp-content/uploads/2016/01/Hawaiian-Pizza.jpg",
+            "image": "hawaiian_pizza.jpg"
+      }
+    },
+    {
+      "pk": 26,
+      "model": "products.product",
+      "fields": {
+            "name": "BBQ Chicken Pizza",
+            "description": "Tangy BBQ sauce, grilled chicken, and red onions on a flavorful pizza crust.",
+            "price": 13.99,
+            "category": 2,
+            "rating": 4.9,
+            "image_url": "https://www.sykeshousefarm.co.uk/wp-content/uploads/2021/01/BBQ-Chicken-Pizza-9.jpg",
+            "image": "bbq_chicken_pizza.jpg"
+      }
+    },
+    {
+      "pk": 27,
+      "model": "products.product",
+      "fields": {
+            "name": "Supreme Pizza",
+            "description": "The ultimate pizza with a variety of toppings including pepperoni, sausage, onions, peppers, and olives.",
+            "price": 14.99,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "https://www.schlotzskys.com/-/media/schlotzskys/menu/pizza/supreme_pizza_1200x800.jpg?v=1&d=20220823T063817Z",
+            "image": "supreme_pizza.jpg"
+      }
+    },
+    {
+      "pk": 28,
+      "model": "products.product",
+      "fields": {
+            "name": "Chicago Deep Dish Pizza",
+            "description": "Authentic Chicago deep-dish pizza with a thick crust, tomato sauce, cheese, and various toppings.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.8,
+            "image_url": "https://www.savorytooth.com/wp-content/uploads/2016/03/deep-dish-pizza-whole-square2.jpg",
+            "image": "chicago_deep_dish_pizza.jpg"
+      }
+    },
+    {
+      "pk": 29,
+      "model": "products.product",
+      "fields": {
+            "name": "Buffalo Chicken Pizza",
+            "description": "Spicy buffalo sauce, shredded chicken, and blue cheese on a crispy pizza crust.",
+            "price": 13.49,
+            "category": 6,
+            "rating": 4.6,
+            "image_url": "https://theendlessappetite.com/wp-content/uploads/2020/09/buffalo-chicken-pizza-3.jpg",
+            "image": "buffalo_chicken_pizza.jpg"
+      }
+    },
+    {
+      "pk": 30,
+      "model": "products.product",
+      "fields": {
+            "name": "Mushroom and Truffle Oil Pizza",
+            "description": "Indulgent pizza with mushrooms and a drizzle of truffle oil for a gourmet touch.",
+            "price": 16.99,
+            "category": 6,
+            "rating": 4.9,
+            "image_url": "https://www.foodiecrush.com/wp-content/uploads/2018/05/Truffle-Mushroom-Pizza-foodiecrush.com-021.jpg",
+            "image": "mushroom_truffle_oil_pizza.jpg"
+      }
+    },
+    {
+      "pk": 31,
+      "model": "products.product",
+      "fields": {
+            "name": "Four Cheese Pizza",
+            "description": "A cheesy delight with a blend of mozzarella, cheddar, parmesan, and gouda cheeses.",
+            "price": 12.49,
+            "category": 2,
+            "rating": 4.5,
+            "image_url": "https://www.atavola.hk/wp-content/uploads/2018/05/four-cheese-pizza.png",
+            "image": "four_cheese_pizza.jpg"
+      }
+    },
+    {
+      "pk": 32,
+      "model": "products.product",
+      "fields": {
+            "name": "Vegan Veggie Pizza",
+            "description": "Plant-based pizza loaded with a variety of colorful vegetables. Vegan-friendly.",
+            "price": 14.99,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "https://image.jimcdn.com/app/cms/image/transf/dimension=4000x3000:format=jpg/path/s5a2dee3a606a2f74/image/if2910502d44911fc/version/1527263949/image.jpg",
+            "image": "vegan_veggie_pizza.jpg"
+      }
+    },
+    {
+      "pk": 33,
+      "model": "products.product",
+      "fields": {
+            "name": "White Pizza",
+            "description": "Delicious white pizza with garlic-infused olive oil, ricotta, and spinach.",
+            "price": 11.99,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": "https://external-preview.redd.it/3mDRsqLUE9eju14_Bm--orIHyKUQ1S9oI5nc-OvrAFM.jpg?auto=webp&s=ee7254ad2d7cebe25530adda13d4445fc85c7279",
+            "image": "white_pizza.jpg"
+      }
+    },
+    {
+      "pk": 34,
+      "model": "products.product",
+      "fields": {
+            "name": "Margarita Pizza",
+            "description": "Simplicity at its best. Margarita pizza with fresh tomatoes, mozzarella, and basil.",
+            "price": 10.99,
+            "category": 2,
+            "rating": 4.8,
+            "image_url": "https://www.kimscravings.com/wp-content/uploads/2020/01/Margherita-Pizza-4.jpg",
+            "image": "margarita_pizza.jpg"
+      }
+    },
+    {
+      "pk": 35,
+      "model": "products.product",
+      "fields": {
+            "name": "Meat Lovers Pizza",
+            "description": "A carnivore's delight. Packed with pepperoni, sausage, bacon, and ham.",
+            "price": 15.49,
+            "category": 2,
+            "rating": 4.9,
+            "image_url": "https://halo-pg.com/wp-content/uploads/2021/10/Ultimate-Stuffed-Meatlovers-Pizza-1.jpg",
+            "image": "meat_lovers_pizza.jpg"
+      }
+    },
+    {
+      "pk": 36,
+      "model": "products.product",
+      "fields": {
+            "name": "Pesto Chicken Pizza",
+            "description": "Unique and flavorful pizza with pesto sauce, grilled chicken, and cherry tomatoes.",
+            "price": 13.99,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "https://i.pinimg.com/originals/d2/a4/77/d2a477938288a563e6f6a5f08b4950df.jpg",
+            "image": "pesto_chicken_pizza.jpg"
+      }
+    },
+    {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+            "name": "Ryvita Whole Grain Cracker Bread (125g)",
+            "description": "Nutritious whole wheat bread. Great for sandwiches. A wholesome choice.",
+            "price": 3.49,
+            "category": 7,
+            "rating": 4.7,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/ec24ea53-3bd3-4a46-9caa-5a5cc24332f3/5196c043-44e7-407c-8122-b38917c31336_1342657480.jpeg?h=960&w=960",
+            "image": "whole_grain_cracker_bread.jpg"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "products.product",
+        "fields": {
+            "name": "Brown Sourdough (400g)",
+            "description": "Artisanal sourdough bread with a crispy crust and tangy flavor.",
+            "price": 4.99,
+            "category": 7,
+            "rating": 4.8,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/1d30ee51-31ec-4b23-b0c1-5d1d3600bdb4/f61a0e1a-3541-4136-a312-f95c2e0a9ded_2147164987.jpeg?h=960&w=960",
+          "image": "sourdough_bread.jpg"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+            "name": "Ryvita Multigrain Rye Bread (250g)",
+            "description": "Hearty multigrain bread packed with seeds and grains. A wholesome choice.",
+            "price": 4.29,
+            "category": 7,
+            "rating": 4.6,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/8daf056d-2c70-4fe1-81d9-8c2760f15cf1/ad584ffd-72a5-43db-ab88-7cbca270ed8b_511046445.jpeg?h=960&w=960",
+            "image": "multigrain_bread.jpg"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "name": "Twin Baguettes",
+            "description": "Classic French baguette with a crisp crust and soft interior.",
+            "price": 2.99,
+            "category": 7,
+            "rating": 4.5,
+            "image_url": "https://m.media-amazon.com/images/I/41hc+pcMQgS._AC_.jpg",
+            "image": "baguette.jpg"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "name": "Tesco Finest Stonebaked Ciabatta",
+            "description": "Italian ciabatta bread with an airy texture and a touch of olive oil, enriched with fibre so it can be enjoyed as part of a balanced diet.",
+            "price": 3.79,
+            "category": 7,
+            "rating": 4.9,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/a93668fd-2ef4-46d6-982e-5169f5610335/14403577-41bd-415d-8838-4b1ba38e08cc_888523641.jpeg?h=960&w=960",
+            "image": "ciabatta_bread.jpg"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "name": "Biona Rye Bread Organic (500g)",
+            "description": "Dark and flavorful rye bread. Perfect for sandwiches or toast.",
+            "price": 4.49,
+            "category": 7,
+            "rating": 4.6,
+            "image_url": "https://m.media-amazon.com/images/I/61RJ4UakcuL._AC_SL1000_.jpg",
+            "image": "rye_bread.jpg"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "name": "Betty Crocker Gluten Free Devil's Food Chocolate Cake Mix, 425g",
+            "description": "Rich and decadent chocolate cake. A treat for chocolate lovers.",
+            "price": 15.99,
+            "category": 3,
+            "rating": 4.8,
+            "image_url": "https://m.media-amazon.com/images/I/81cHEPNfOzL._AC_SL1500_.jpg",
+            "image": "chocolate_cake.jpg"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "name": "Oggs Vegan Mini Vanilla Cupcakes 9 Pack (180g)",
+            "description": "9 Mini Vanilla Flavour Sponge Cakes with Vanilla Flavour Frosting & Sprinkles.",
+            "price": 12.99,
+            "category": 3,
+            "rating": 4.7,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/3d5e8743-a8b1-4697-b410-90e11af49466/e0caec15-8e3c-48aa-a0b3-27822dd7ff53_1536002809.jpeg?h=960&w=960",
+            "image": "vanilla_cupcakes.jpg"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "name": "Betty Crocker Red Velvet Chocolate Cake Mix (425g)",
+            "description": "Moist and velvety red velvet cake with cream cheese frosting.",
+            "price": 18.99,
+            "category": 3,
+            "rating": 4.9,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/6cb656a9-b40d-4b32-b556-565bdb93f72d/9e938909-1eda-4789-aa95-6d1e47569434_1298910521.jpeg?h=960&w=960",
+            "image": "red_velvet_cake.jpg"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+            "name": "Lemon Poppy Seed Muffins (5 x 50g)",
+            "description": "Zesty lemon muffins with the crunch of poppy seeds. Perfect for breakfast.",
+            "price": 9.99,
+            "category": 6,
+            "rating": 4.6,
+            "image_url": "https://www.jocooks.com/wp-content/uploads/2011/09/lemon-poppy-seed-muffins-1-16.jpg",
+            "image": "lemon_poppy_seed_muffins.jpg"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "products.product",
+        "fields": {
+            "name": "Sainsbury's Carrot Cake",
+            "description": "Classic carrot cake filled and topped with cream cheese buttercream and decorated with walnuts. A timeless favorite.",
+            "price": 16.99,
+            "category": 3,
+            "rating": 4.8,
+            "image_url": "https://assets.sainsburys-groceries.co.uk/gol/6025921/1/2365x2365.jpg",
+            "image": "carrot_cake.jpg"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "products.product",
+        "fields": {
+            "name": "Hazelnut Espresso Torte (600g)",
+            "description": "An exquisite torte combining the rich flavors of hazelnut and bold espresso.",
+            "price": 21.49,
+            "category": 6,
+            "rating": 4.5,
+            "image_url": "https://earthpoweredfamily.com/wp-content/uploads/2016/10/ChocoHazelnutTorte6.jpg",
+            "image": "hazelnut_espresso_torte.jpg"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "products.product",
+        "fields": {
+            "name": "Almond Coffe Cake (600g)",
+            "description": "Almond coffee cake is a delicious cake that is perfect for breakfast, brunch, or dessert, flavored with almond extract to enhance the nutty taste,  features a soft crumbly texture, topped with a crunchy layer of sliced almonds",
+            "price": 24.99,
+            "category": 6,
+            "rating": 4.9,
+            "image_url": "https://1.bp.blogspot.com/-vhl273e2lCA/TxRkl3GfQgI/AAAAAAAAAPc/-fOSXQ-JoaM/s1600/Almond+Coffee+Cake.JPG",
+            "image": "almond_coffe_cake.jpg"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "products.product",
+        "fields": {
+            "name": "Coffee Cake",
+            "description": "Cinnamon-spiced coffee cake with a crumbly topping. Perfect for brunch.",
+            "price": 28.79,
+            "category": 6,
+            "rating": 4.7,
+            "image_url": "https://charlotteslivelykitchen.com/wp-content/uploads/2019/01/coffee-cake-3.jpg",
+            "image": "coffee_cake.jpg"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "products.product",
+        "fields": {
+            "name": "Chocolate Chip Cookies (300g)",
+            "description": "Classic chocolate chip cookies crumbly & sweet packed with silky chocolate for a classic treat that’s full of crunch.",
+            "price": 8.99,
+            "category": 6,
+            "rating": 4.8,
+            "image_url": "https://th.bing.com/th/id/R.ae8a4f7984054dc444d2ec18331afc94?rik=uG7NrNmFVFUpjQ&pid=ImgRaw&r=0",
+            "image": "chocolate_chip_cookies.jpg"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "products.product",
+        "fields": {
+            "name": "Tesco Finest 4 Chocolate Chip & Caramel Scones",
+            "description": "Delicate scones with the sweetness of cherries and the crunch of almonds. All butter scones with chocolate chips, caramel pieces and Cornish clotted cream.",
+            "price": 4.99,
+            "category": 3,
+            "rating": 4.6,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/49e0f65c-909e-41f9-99a1-1d3c7ec911f9/ba936930-7384-41ac-aeea-5f56a2c7c7a7_1955119026.jpeg?h=960&w=960",
+            "image": "chocolate_and_caramel.jpg"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "products.product",
+        "fields": {
+            "name": "Nutella-filled Croissants (4 x 67g)",
+            "description": "Flaky croissants filled with rich and creamy Nutella for a delightful treat.",
+            "price": 5.49,
+            "category": 6,
+            "rating": 4.7,
+            "image_url": "https://recipesviva.com/wp-content/uploads/2021/07/recette-croissants-au-nutella-rapides-et-c3a9conomiques-768x445.png",
+            "image": "nutella_filled_croissants.jpg"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "products.product",
+        "fields": {
+            "name": "Hazelnut Chocolate Babka",
+            "description": "A delightful twist on traditional babka, featuring layers of hazelnut and chocolate filling.",
+            "price": 6.99,
+            "category": 6,
+            "rating": 4.9,
+            "image_url": "https://daysofjay.com/wp-content/uploads/2022/11/Chocolate-Hazelnut-Babka-web-23-500x750.jpg",
+            "image": "hazelnut_chocolate_babka.jpg"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "products.product",
+        "fields": {
+            "name": "Tesco Dark Chocolate Bar (200g)",
+            "description": "Intense and rich dark chocolate bar with a smooth texture.",
+            "price": 4.99,
+            "category": 4,
+            "rating": 4.7,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/916c043b-07e2-42be-8e48-07e0e88e7391/6c125c4c-0262-44a1-865a-b08f91874559_1634893897.jpeg?h=960&w=960",
+            "image": "dark_chocolate_bar.jpg"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "products.product",
+        "fields": {
+            "name": "Maltesers Truffles Milk Chocolate Gift Box Chocolates (336g)",
+            "description": "Milk chocolate with a malt filing (19%), chocolate filling (19%) and honeycombed pieces (3.4%). The unique crunchy and malty taste of Maltesers with the creamy texture of a truffle Perfect for gifting.",
+            "price": 9.99,
+            "category": 4,
+            "rating": 4.8,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/ef1f18a0-5faa-4f0b-bed0-cf6f65e4b25d/48246070-9edc-474c-99f5-f630638dabde_753160974.jpeg?h=960&w=960",
+            "image": "milk_chocolate_truffles.jpg"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "products.product",
+        "fields": {
+            "name": "Ferrero Rocher 24 Pieces Boxed Chocolates (300g)",
+            "description": "Decadent hazelnut praline-filled chocolates. A delightful blend of crunch and smoothness. Perfect gift to share with your loved ones. Delicious hazelnut covered in milk chocolate and hazelnut pieces",
+            "price": 9.99,
+            "category": 4,
+            "rating": 4.6,
+            "image_url": "https://i.ebayimg.com/images/g/hdUAAOSwuJlloPhh/s-l1600.jpg",
+            "image": "classic_ferrero_rocher.jpg"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "products.product",
+        "fields": {
+            "name": "Ferrero Raffaello White Chocolate Bar (90g)",
+            "description": "White Chocolate Bar (60%) with a Coconut and Almond Filling",
+            "price": 6.99,
+            "category": 4,
+            "rating": 4.5,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/12bcbe9f-a85a-4e7b-9fe8-8189cb2ce8d2/f7d2cf71-4fad-4a95-aade-993f05a412f4_786130532.jpeg?h=960&w=960",
+            "image": "white_chocolate_bar.jpg"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "products.product",
+        "fields": {
+            "name": "Quality Street Assorted Chocolate Box (220g)",
+            "description": "An assortment of premium chocolates with various fillings and flavors.",
+            "price": 12.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/a0b8c117-80fb-4bfc-a2c2-9ac375644c36/6dd21adf-5946-4453-b034-a9ed30db2c71_1890803504.jpeg?h=960&w=960",
+            "image": "assorted_chocolate_box.jpg"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "products.product",
+        "fields": {
+            "name": "Galaxy Smooth Caramel & Milk Chocolate Bar (135g)",
+            "description": "Indulgent chocolate squares with a gooey caramel center. A perfect blend of sweet and salty.",
+            "price": 8.49,
+            "category": 4,
+            "rating": 4.6,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/115786df-fa04-45fa-a40f-b148d79c396e/f2e2d3be-514b-4317-bbe5-adb3412ce226_76419514.jpeg?h=960&w=960",
+            "image": "caramel_filled_chocolate_squares.jpg"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "products.product",
+        "fields": {
+            "name": "Aero Peppermint Mint Chocolate Sharing Bar (90g)",
+            "description": "Refreshing mint-flavored chocolate truffle bars. Smooth milk chocolate filled with peppermint flavoured bubbles a cool and indulgent treat.",
+            "price": 9.99,
+            "category": 4,
+            "rating": 4.7,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/db91b921-96f4-4dc3-bda9-d53945cbc223/99707087-99da-40ad-8753-57ed78c77725_448619132.jpeg?h=960&w=960",
+            "image": "mint_chocolate_truffle_bars.jpg"
+        }
+    },
+    {
+        "pk": 62,
+        "model": "products.product",
+        "fields": {
+            "name": "GHIRARDELLI cherry almond dark chocolate Bar (100g)",
+            "description": "Dark chocolate combined with sweet cherries and crunchy almonds. A luxurious combination.",
+            "price": 10.99,
+            "category": 4,
+            "rating": 4.8,
+            "image_url": "https://i.ebayimg.com/images/g/avQAAOSw3jpil6XG/s-l960.jpg",
+            "image": "cherry_almond_dark_chocolate.jpg"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "products.product",
+        "fields": {
+            "name": "Lindt Excellence Dark Caramel and Sea Salt Chocolate Bar (100g)",
+            "description": "A perfect blend of sweet and salty with creamy caramel and a touch of sea salt.",
+            "price": 8.99,
+            "category": 4,
+            "rating": 4.6,
+            "image_url": "https://assets.sainsburys-groceries.co.uk/gol/7563098/1/2365x2365.jpg",
+            "image": "sea_salt_caramel_chocolate_bar.jpg"
+        }
+    },
+    {
+        "pk": 64,
+        "model": "products.product",
+        "fields": {
+            "name": "Tesco Finest Orange 47% Dark Chocolate (100g)",
+            "description": "Zesty orange-flavored dark chocolate. A citrusy twist on classic dark chocolate.",
+            "price": 7.49,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/770c5785-befd-44d5-b597-782746e44760/d7ad9905-7d7f-4f77-9bd9-65d6424c7694_453864567.jpeg?h=960&w=960",
+            "image": "orange_dark_chocolate.jpg"
+        }
+    },
+    {
+        "pk": 65,
+        "model": "products.product",
+        "fields": {
+            "name": "Almond Joy Chocolate Bars",
+            "description": "Milk chocolate bars filled with coconut and almonds. A tropical delight.",
+            "price": 11.49,
+            "category": 4,
+            "rating": 4.5,
+            "image_url": "https://img.fruugo.com/product/0/82/866241820_max.jpg",
+            "image": "almond_joy_chocolate_bars.jpg"
+        }
+    },
+    {
+        "pk": 66,
+        "model": "products.product",
+        "fields": {
+            "name": "Lindt Lindor Double Chocolate Truffles (200g)",
+            "description": "Milk chocolate truffles with a smooth melting filling with dark chocolate.",
+            "price": 9.99,
+            "category": 4,
+            "rating": 4.8,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/234e336f-e95a-44b7-8573-f9b32cb6be2f/7bb79253-b190-4712-82c8-2780882fb1b1_1683746424.jpeg?h=960&w=960",
+            "image": "double_chocolate_truffles.jpg"
+        }
+    },
+    {
+        "pk": 67,
+        "model": "products.product",
+        "fields": {
+            "name": "Peanut Butter Chocolate Squares(6 pack)",
+            "description": "Smooth peanut butter-filled chocolate squares. A classic and irresistible combination.",
+            "price": 8.49,
+            "category": 4,
+            "rating": 4.7,
+            "image_url": "https://m.media-amazon.com/images/I/71hYrnbrbWL._AC_SL1080_.jpg",
+            "image": "peanut_butter_chocolate_squares.jpg"
+        }
+    },
+    {
+        "pk": 68,
+        "model": "products.product",
+        "fields": {
+            "name": "Mocha Almond Chocolate Bar",
+            "description": "Milk chocolate with a hint of coffee and the crunch of almonds. A delightful pick-me-up.",
+            "price": 10.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": "https://www.kindsnacks.com/dw/image/v2/BCLS_PRD/on/demandware.static/-/Sites-kind-snacks-master/default/dw18ab0100/images/17181-main-kind-nut-bars-dark-chocolate-mocha-almond.png?sw=800",
+            "image": "mocha_almond_chocolate_bar.jpg"
+        }
+    },
+    {
+        "pk": 69,
+        "model": "products.product",
+        "fields": {
+            "name": "Cherry Cordial Chocolates",
+            "description": "Cherries encased in rich chocolate with a liquid center. A luxurious and sweet indulgence.",
+            "price": 12.49,
+            "category": 4,
+            "rating": 4.6,
+            "image_url": "https://i5.walmartimages.com/asr/8e34b2e4-cdc6-48b4-bb2f-ba883a7186d8_1.7cbb05f66394193823831856a754310a.jpeg",
+            "image": "cherry_cordial_chocolates.jpg"
+        }
+    },
+    {
+        "pk": 70,
+        "model": "products.product",
+        "fields": {
+            "name": "Ms Molly's Creamy White Chocolate",
+            "description": "Smooth and creamy white chocolate for those who love a sweet and milky indulgence.",
+            "price": 6.99,
+            "category": 4,
+            "rating": 4.6,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/6e6b91e6-618a-4311-b06a-710e49c16853/10ccddc5-a947-4918-a1be-24bc68272326_723215854.jpeg?h=960&w=960",
+            "image": "creamy_white_chocolate.jpg"
+        }
+    },
+    {
+        "pk": 71,
+        "model": "products.product",
+        "fields": {
+            "name": "Lindt Milk Chocolate with Hazelnuts (150g)",
+            "description": "Rich milk chocolate with the added crunch and flavor of hazelnuts for a delightful treat.",
+            "price": 7.99,
+            "category": 4,
+            "rating": 4.7,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/743347de-36bf-4add-820e-7c86933b2e14/69aa7c30-a318-4fa7-8bd0-09e1a5e5253f_833411582.jpeg?h=960&w=960",
+            "image": "milk_chocolate_hazelnuts.jpg"
+        }
+    },
+    {
+        "pk": 72,
+        "model": "products.product",
+        "fields": {
+            "name": "Cadbury Fudge Fudge Chocolate",
+            "description": "Indulge in the richness of fudge chocolate with a velvety texture and intense cocoa flavor.",
+            "price": 8.49,
+            "category": 4,
+            "rating": 4.8,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/8ace7f5c-d694-43e7-9806-31279516ff08/be75a4da-c130-4470-af11-e29b94211ad5_587882955.jpeg?h=960&w=960",
+            "image": "decadent_fudge_chocolate.jpg"
+        }
+    },
+    {
+        "pk": 73,
+        "model": "products.product",
+        "fields": {
+            "name": "Tropical Fruit Smoothie",
+            "description": "A refreshing smoothie blend of pineapple, mango, and banana. Tropical goodness in every sip.",
+            "price": 5.99,
+            "category": 5,
+            "rating": 4.8,
+            "image_url": "https://tatyanaseverydayfood.com/wp-content/uploads/2015/01/Fruit-Smoothie.jpg",
+            "image": "tropical_fruit_smoothie.jpg"
+        }
+    },
+    {
+        "pk": 74,
+        "model": "products.product",
+        "fields": {
+            "name": "Strawberry Lemonade",
+            "description": "Sweet and tangy strawberry lemonade. The perfect summer thirst-quencher.",
+            "price": 3.99,
+            "category": 5,
+            "rating": 4.7,
+            "image_url": "https://bellyfull.net/wp-content/uploads/2021/05/Strawberry-Lemonade-blog-2.jpg",
+            "image": "strawberry_lemonade.jpg"
+        }
+    },
+    {
+        "pk": 75,
+        "model": "products.product",
+        "fields": {
+            "name": "Mango-Peach Iced Tea",
+            "description": "Iced tea infused with the flavors of ripe mangoes and peaches. A delightful twist on a classic.",
+            "price": 4.49,
+            "category": 5,
+            "rating": 4.6,
+            "image_url": "https://i.pinimg.com/originals/e5/d4/e0/e5d4e0bbfb477f3746580565e7fe98e0.jpg",
+            "image": "mango_peach_iced_tea.jpg"
+        }
+    },
+    {
+        "pk": 76,
+        "model": "products.product",
+        "fields": {
+            "name": "Watermelon Mint Cooler",
+            "description": "Cooling watermelon drink with a hint of fresh mint. Perfect for hot days.",
+            "price": 4.99,
+            "category": 5,
+            "rating": 4.5,
+            "image_url": "https://i.pinimg.com/originals/68/f0/a4/68f0a4236158fe958ba6a877a46fa249.jpg",
+            "image": "watermelon_mint_cooler.jpg"
+        }
+    },
+    {
+        "pk": 77,
+        "model": "products.product",
+        "fields": {
+            "name": "Pineapple Ginger Elixir",
+            "description": "Energizing elixir with the zing of ginger and the sweetness of pineapple. A wellness boost.",
+            "price": 6.99,
+            "category": 5,
+            "rating": 4.9,
+            "image_url": "https://www.caligirlcooking.com/wp-content/uploads/2019/07/Pineapple-Turmeric-Ginger-Elixir-11.jpg",
+            "image": "pineapple_ginger_elixir.jpg"
+        }
+    },
+    {
+        "pk": 78,
+        "model": "products.product",
+        "fields": {
+            "name": "Berry Blast Smoothie",
+            "description": "A burst of berry goodness with strawberries, blueberries, and raspberries. Packed with antioxidants.",
+            "price": 5.49,
+            "category": 5,
+            "rating": 4.6,
+            "image_url": "https://i.pinimg.com/originals/f4/b7/ab/f4b7ab6685677649d7f773fa4e9a309e.jpg",
+            "image": "berry_blast_smoothie.jpg"
+        }
+    },
+    {
+        "pk": 79,
+        "model": "products.product",
+        "fields": {
+            "name": "Citrus Sparkling Refresher",
+            "description": "Sparkling citrus drink with a mix of oranges, lemons, and limes. Effervescent and uplifting.",
+            "price": 4.79,
+            "category": 5,
+            "rating": 4.7,
+            "image_url": "https://i.pinimg.com/originals/d8/cd/cf/d8cdcf43025553f84ebd0b890cb0d917.jpg",
+            "image": "citrus_sparkling_refresher.jpg"
+        }
+    },
+    {
+        "pk": 80,
+        "model": "products.product",
+        "fields": {
+            "name": "Kiwi-Pineapple Punch",
+            "description": "A punchy combination of kiwi and pineapple. Sweet, tart, and utterly delicious.",
+            "price": 5.99,
+            "category": 5,
+            "rating": 4.8,
+            "image_url": "https://static.toiimg.com/thumb/msid-64961851,width-1070,height-580,resizemode-75/64961851,pt-32,y_pad-40/64961851.jpg",
+            "image": "kiwi_pineapple_punch.jpg"
+        }
+    },
+    {
+        "pk": 81,
+        "model": "products.product",
+        "fields": {
+            "name": "Coconut Limeade",
+            "description": "Limeade infused with the tropical essence of coconut. A tropical paradise in a glass.",
+            "price": 4.29,
+            "category": 5,
+            "rating": 4.6,
+            "image_url": "https://nogluten-noproblem.com/wp-content/uploads/2012/03/20120315_20120312_IMG_7517.jpg",
+            "image": "coconut_limeade.jpg"
+        }
+    },
+    {
+        "pk": 82,
+        "model": "products.product",
+        "fields": {
+            "name": "Passion Fruit Iced Tea",
+            "description": "Iced tea with the exotic flavor of passion fruit. A taste of the tropics.",
+            "price": 4.99,
+            "category": 5,
+            "rating": 4.9,
+            "image_url": "https://www.girlgonegourmet.com/wp-content/uploads/2022/04/Passion-Fruit-Iced-Tea-27.jpg",
+            "image": "passion_fruit_iced_tea.jpg"
+        }
+    },
+    {
+        "pk": 83,
+        "model": "products.product",
+        "fields": {
+            "name": "Cucumber-Mint Cooler",
+            "description": "Cooling cucumber drink with a hint of mint. A revitalizing and hydrating choice.",
+            "price": 4.49,
+            "category": 5,
+            "rating": 4.5,
+            "image_url": "https://www.sidechef.com/recipe/07a4766c-d39e-4dff-8cd3-0b0a538f1d04.jpg",
+            "image": "cucumber_mint_cooler.jpg"
+        }
+    },
+    {
+        "pk": 84,
+        "model": "products.product",
+        "fields": {
+            "name": "Blueberry Lavender Lemonade",
+            "description": "Lemonade with the fragrant touch of lavender and the sweetness of blueberries.",
+            "price": 5.79,
+            "category": 5,
+            "rating": 4.7,
+            "image_url": "https://blueberry.org/wp-content/uploads/2022/04/Blueberry_Lavender_Lemonade_CT-047_940x1409.jpg",
+            "image": "blueberry_lavender_lemonade.jpg"
+        }
+    },
+    {
+        "pk": 85,
+        "model": "products.product",
+        "fields": {
+            "name": "Mango Mojito",
+            "description": "A tropical twist on the classic mojito with the addition of ripe mangoes.",
+            "price": 6.49,
+            "category": 5,
+            "rating": 4.8,
+            "image_url": "https://www.spoonfulofflavor.com/wp-content/uploads/2020/07/mango-mojito-recipe.jpg",
+            "image": "mango_mojito.jpg"
+        }
+    },
+    {
+        "pk": 86,
+        "model": "products.product",
+        "fields": {
+            "name": "Raspberry Lime Spritzer",
+            "description": "Fizzing spritzer with the bold flavors of raspberries and zesty lime.",
+            "price": 4.99,
+            "category": 5,
+            "rating": 4.6,
+            "image_url": "https://4.bp.blogspot.com/-you4kLKwVJg/U8rIbYcHG3I/AAAAAAAA8Ak/TLyhKOj9QvA/s512/18-Raspberry-Lime-Spritzer-tasteasyougo.com.jpg",
+            "image": "raspberry_lime_spritzer.jpg"
+        }
+    },
+    {
+        "pk": 87,
+        "model": "products.product",
+        "fields": {
+            "name": "Apple Cinnamon Infusion",
+            "description": "Warm and comforting infusion of apple and cinnamon. A cozy and flavorful choice.",
+            "price": 5.29,
+            "category": 5,
+            "rating": 4.9,
+            "image_url": "https://cdn.apartmenttherapy.info/image/fetch/f_auto,q_auto:eco,w_1460/https:%2F%2Fstorage.googleapis.com%2Fgen-atmedia%2F3%2F2014%2F12%2Fc74729ca04408e4ad74db40f5ba2b4a0d8aff30e.jpeg",
+            "image": "apple_cinnamon_infusion.jpg"
+        }
+    },
+    {
+        "pk": 88,
+        "model": "products.product",
+        "fields": {
+            "name": "Cranberry Orange Spritzer",
+            "description": "Bubbly spritzer with the tartness of cranberry and the citrusy kick of orange.",
+            "price": 3.99,
+            "category": 5,
+            "rating": 4.6,
+            "image_url": "https://i.pinimg.com/originals/0c/58/66/0c58662077b01c00e810b68967dcff12.jpg",
+            "image": "cranberry_orange_spritzer.jpg"
+        }
+    },
+    {
+        "pk": 89,
+        "model": "products.product",
+        "fields": {
+            "name": "Ginger Peach Iced Tea",
+            "description": "Iced tea infused with the warmth of ginger and the sweetness of peaches.",
+            "price": 4.49,
+            "category": 5,
+            "rating": 4.5,
+            "image_url": "https://delightfulemade.com/wp-content/uploads/2014/07/Ginger-Peach-Iced-Tea-by-DelightfulEMade.com-sq-wtxt-1024x1024.png",
+            "image": "ginger_peach_iced_tea.jpg"
+        }
+    },
+    {
+        "pk": 90,
+        "model": "products.product",
+        "fields": {
+            "name": "Pineapple Coconut Smoothie",
+            "description": "A tropical blend of pineapple and coconut for a refreshing smoothie experience.",
+            "price": 5.49,
+            "category": 5,
+            "rating": 4.7,
+            "image_url": "https://i1.wp.com/gatherforbread.com/wp-content/uploads/2015/01/pineapple-coconut-smoothie-2.jpg?ssl=1",
+            "image": "pineapple_coconut_smoothie.jpg"
+        }
+    },
+    {
+        "pk": 91,
+        "model": "products.product",
+        "fields": {
+            "name": "Tres Leches Mini-Cake",
+            "description": "Experience the indulgence of a classic tres leches cake soaked in three types of milk, condensed milk, whole milk and evaporated milk, topped with whipped cream and a strawberry.",
+            "price": 7.99,
+            "category": 6,
+            "rating": 4.9,
+            "image_url": "https://2.bp.blogspot.com/-B2ZFOUKtquI/WU6vnQXdBTI/AAAAAAAAAvo/hnu6ZKpB2pYcGVghQCpiiLBb2fVPb-lIQCLcBGAs/s1600/19204691_1768148683475857_1354669522_o.jpg",
+            "image": "tres_leches_mini_cake.jpg"
+        }
+    },
+    {
+        "pk": 92,
+        "model": "products.product",
+        "fields": {
+            "name": "Blueberry Bliss Muffins",
+            "description": "Enjoy the blissful taste of these moist and flavorful blueberry muffins with a hint of lemon zest.",
+            "price": 7.99,
+            "category": 3,
+            "rating": 4.7,
+            "image_url": "https://assets.sainsburys-groceries.co.uk/gol/7932720/1/2365x2365.jpg",
+            "image": "blueberry_bliss_muffins.jpg"
+        }
+    }
+  ]
+  
