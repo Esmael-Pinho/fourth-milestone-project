@@ -10,18 +10,64 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
+    <div class="container-fluid h-100">
         <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                   test
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">test</a>
-                    </h4>
+            <div id="myCarousel" class="carousel slide mb-6 carousel-dark pointer-event" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row featurette justify-content-center">
+                        <div class="col-sm-8 col-md-6">
+                            <img class="d-block w-100 slider-img img-1"  src="/media/slider-img-1.png" alt="Healthy Products">
+                        </div>
+                        <div class="col-sm-4 col-md-6 text-center text-margin">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-10 col-md-9">
+                                    <h6 class="slide-sub-title animated animation-1"><img src="/media/slider-icon.png" alt="Picture of Handmade Products"> 100% Organic Products</h6>
+                                    <h1 class="slide-title animated fw-normal lh-1 animation-2">Tasty & Healthy Organic Food</h1>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 col-md-3">
+                                    <a href="" class="btn slide-btn button-green text-uppercase animated animation-3">Explore Products</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row featurette justify-content-evenly">
+                        <div class="col-sm-4 col-md-6 text-center text-margin order-lg-first">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-10 col-md-9">
+                                    <h6 class="slide-sub-title animated animation-1"><img src="/media/slider-icon.png" alt="Picture of Handmade Drinks"> 100% Handmade Drinks</h6>
+                                    <h1 class="slide-title animated fw-normal lh-1 animation-2">Tasty & Healthy Organic Drinks</h1>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 col-md-3">
+                                    <a href="" class="btn slide-btn button-green btn-effect text-uppercase animated animation-3"><span>Explore Drinks</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-6 order-first order-lg-last">
+                            <img class="d-block w-100 slider-img img-2"  src="/media/slider-img-2.png" alt="Healthy Drinks">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </div>
+        </div> 
     </div>
 {% endblock %}

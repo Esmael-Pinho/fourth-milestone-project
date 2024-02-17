@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // Click event for the "Search" link
-    $(".list-inline-item.dropdown a.nav-link").on("click", function(e) {
+    $(".list-inline-item.search-btn ").on("click", function(e) {
         // Toggle the collapse class on the navbar
         $(".navbar-nav").toggleClass("d-none");
 

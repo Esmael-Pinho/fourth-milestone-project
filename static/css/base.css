@@ -101,11 +101,13 @@ main {
     transition: all 0.3s ease 0s;
     &:hover{
         background-color:  var(--white);
-        color: var(--black);
+        color: var(--green);
         border: 1px solid var(--green);
     }
     transition: all 0.2s ease 0s;
+    
 }
+
 
 .green {
     color: var(--green);
@@ -187,7 +189,6 @@ main {
     }
 }
 
-
 .delivery-icon i {
     color: var(--yellow);
     z-index: 3;
@@ -236,6 +237,163 @@ main {
     }
 }
 
+.navbar-nav .nav-link.active,
+.nav-link:hover,
+.nav-link:focus,
+.dropdown-item:hover,
+.search-form:hover {
+    color: var(--green);
+}
+
+/* Carousel */
+#myCarousel {
+    padding-top: .5rem;
+    padding-bottom: 4rem;
+}
+
+.text-margin {
+    margin: auto auto;
+}
+
+.slider-img {
+    width: 500px;
+    height: 500px;
+}
+
+.img-1 {
+    margin-left: 4rem;
+}
+
+.img-2 {
+    margin-right: 4rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.carousel-icon {
+    color: var(--black);
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    &.active {
+        background-color: var(--green);
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    border: 1px solid var(--grey);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-weight: bolder;
+    top: 50%;
+    font-size: 30px;
+    text-align: center;
+    background-color: transparent;
+    color: var(--black);
+    opacity: 1;
+}
+
+.carousel-control-next {
+    right: 40px;
+    left: auto;
+}
+
+.carousel-control-prev {
+    left: 40px;
+    right: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    &:hover {
+        background-color: var(--green);
+        color: var(--white);
+    }
+}
+
+.carousel-control-prev:active,
+.carousel-control-next:active {
+    color: var(--black);
+}
+
+
+.animated {
+    opacity: 0;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.animation-1 {
+    animation-name: fadeInUp;
+    animation-delay: 1s;
+    animation-duration: 1s;
+}
+
+.animation-2 {
+    animation-name: fadeInUp;
+    animation-delay: 2s; 
+    animation-duration: 1s; 
+    animation-timing-function: cubic-bezier(0.9, 0.6, 0.3, 0.1);
+}
+
+.animation-3 {
+    animation-name: fadeInUp;
+    animation-delay: 2s;
+    animation-duration: 2s; 
+    animation-timing-function: cubic-bezier(1.0, 0.7, 0.3, 0.2); /* Adjust these values as needed  for smoother animation*/
+}
+
+@keyframes fadeInUp {
+    0% {
+        -webkit-transform: translate3d(0, 450%, 0);
+        opacity: 0;
+        transform: translate3d(0, 450%, 0);
+    }
+
+    50% {
+        -webkit-transform: translate3d(0, 4350%, 0);
+        opacity: 0;
+        transform: translate3d(0, 350%, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, 150%, 0);
+        opacity: 0;
+        transform: translate3d(0, 150%, 0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.slide-sub-title,
+.slide-title {
+    margin-bottom: 1rem;
+}
+
+.slide-title {
+    font-family: 'Oswald', monospace, sans-serif;
+    font-size: 75px;
+    font-weight: 900;
+    margin-top: 1rem;
+    line-height: 1;
+}
+
+.slide-btn {
+    margin-top: 2rem;
+}
 
 
 /* Footer */
@@ -277,3 +435,74 @@ main {
 .btn-social i {
     font-size: 25px;
 }
+
+
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 90%;
+    }
+
+    .logo-text strong {
+        margin: auto auto;
+    }
+  }
+  
+  /* fixed top navbar only on medium and up */
+  @media (min-width: 992px) {
+    .header-container {
+        padding-top: 194px;
+    }
+    
+
+}
+
+@media (min-width: 320px) {
+    .carousel-indicators [data-bs-target] {
+        margin-top: 2rem;
+    }
+
+}
+
+@media (max-width: 1028px) {
+    /* Navbar */
+    .list-inline-item:not(:last-child) {
+        margin-right: 0;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+    /* Carousel */
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none !important;
+    }
+
+    .slider-img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #myCarousel {
+        margin-top: 9.5rem;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 460px) {
+    .animated {
+      opacity: 1;
+      -webkit-animation: none;
+      animation: none; 
+    }
+
+    /* Navbar */
+    .navbar-toggler {
+        margin: 0 auto;
+    }
+  }

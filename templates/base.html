@@ -86,13 +86,13 @@
           <div class="d-lg-flex col-sm-8 col-lg-4 nav-icons-small justify-content-start justify-content-lg-end pe-xl-2">
             {% include 'includes/mobile-top-nav.html' %}
             <ul class="list-inline list-unstyled text-center text-lg-right my-0 nav-icons d-none d-lg-block ">
-                <li class="list-inline-item dropdown ms-3a">
-                        <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#search-bar" aria-controls="search-bar" aria-expanded="false" aria-label="Search">
-                            <div class="text-center icon">
-                                <div><i class="fas fa-search fa-lg"></i></div>
-                                <p class="my-0">Search</p>
-                            </div>
-                        </a>
+                <li class="list-inline-item search-btn dropdown ms-3a">
+                      <a class="nav-link " href="#" data-bs-toggle="collapse" data-bs-target="#search-bar" aria-controls="search-bar" aria-expanded="false" aria-label="Search">
+                        <div class="text-center icon">
+                            <div><i class="fas fa-search fa-lg"></i></div>
+                            <p class="my-0">Search</p>
+                        </div>
+                      </a>
                 </li>
                 <li class="list-inline-item dropdown ms-3">
                     <a class="nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -132,42 +132,8 @@
           </div>
         </div>
       </nav>
-        <div id="delivery-banner" class="row text-center justify-content-center">
-          <div id="slider-container" class="col-10 bg-black text-white">
-            <div id="timer">
-              <div class="delivery-icon icon-1 glow-2"><i class="fa-solid fa-triangle-exclamation"></i></div>
-              <div class="row justify-content-center sliding-text">
-                <div class="col-6 mt-4 d-none d-lg-block">
-                  <h2 class="delivery-font my-1 text-end"> <span class="green">Free Delivery</span> <span>for all orders</span> in: </h2>
-                </div>
-                <div class="col d-lg-none">
-                  <h4 class="logo-font my-1"><span class="green">Free delivery</span> on orders over <span class="yellow1">£{{ free_shipping_threshold }}</span> !</h4>    
-                </div>
-                <div class="col-6 d-none d-lg-block text-start">
-                  <div class="countdown-container">
-                    <div class="countdown">
-                      <h3 id="days" class="bold"></h3>
-                      <p>days</p>
-                    </div>
-                    <div class="countdown">
-                      <h3 id="hours" class="bold"></h3>
-                      <p>hrs</p>
-                    </div>
-                    <div class="countdown">
-                      <h3 id="minutes" class="bold"></h3>
-                      <p>mins</p>
-                    </div>
-                    <div class="countdown">
-                      <h3 id="seconds" class="bold"></h3>
-                      <p>secs</p>
-                    </div>
-                  </div> 
-                </div>
-              </div> 
-              <div class="delivery-icon icon-2 glow-2"><i class="fa-solid fa-triangle-exclamation"></i></div>
-            </div>        
-          </div>            
-        </div>
+      {% block delivery_banner %}
+      {% endblock %}
     </header>
 
     {% if messages %}
@@ -188,7 +154,7 @@
           <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 text-lg-start">
-                    <span class="bold yellow web-name">Mini Tic</span> <span>&copy; All rights reserved 2024</span>
+                    <span class="bold web-name">Mini M</span> <span>&copy; All rights reserved 2024</span>
                 </div>
                 <div class="col-lg-4 my-3 my-lg-0">
                     <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i>

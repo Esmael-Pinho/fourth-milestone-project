@@ -12,8 +12,7 @@
 .section-title {
     font-family: 'Oswald', monospace, sans-serif;
     font-size: 70px;
-    margin-bottom: 2.5rem;
-    margin-top: 11rem;
+    margin: 2.5rem;
 }
 
 .product-container {
