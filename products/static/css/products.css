@@ -31,3 +31,108 @@
     width: 100%;
     height: 100%;
 } 
+
+.product-img {
+    height: 200px;
+    position: relative;
+}
+
+.product-badge {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+.limited {
+    background-color: var(--orange);
+}
+
+.new {
+    background-color: var(--green);
+}
+
+.special {
+    background-color: var(--yellow);
+}
+
+.super {
+    background-color: var(--red);
+}
+
+.approved {
+    background-color: darkblue;
+}
+
+.product-badge li {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--white);
+    padding: 1px 12px;
+    text-transform: uppercase;
+    border-radius: 15px 0px 15px 0px;
+}
+
+.card-g {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.card-g:hover {
+    transform: translateZ(-25px);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4); 
+    border: 1px solid var(--green);
+}
+
+.product-hover-action {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    left: 50px;
+    background-color: transparent;
+    transition: transform .5s;
+    transform: translateY(100%);
+    text-align: center;
+    visibility: hidden;
+}
+
+.card-g:hover .product-hover-action {
+    transform: translateZ(0);
+    visibility: visible;
+}
+
+.product-hover-action a {
+    display: block;
+    text-align: center;
+}
+
+.product-hover-action ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.product-hover-action li {
+    margin: auto auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--yellow);
+}
+
+.product-hover-action li a {
+    display: block;
+    color: var(--black);
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: var(--white);
+}
+
+.product-hover-action li a:hover {
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.card-body {
+    height: 200px;
+}
