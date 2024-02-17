@@ -1194,6 +1194,59 @@
             "image_url": "https://assets.sainsburys-groceries.co.uk/gol/7932720/1/2365x2365.jpg",
             "image": "blueberry_bliss_muffins.jpg"
         }
+    },
+    {
+        "pk": 93,
+        "model": "products.product",
+        "fields": {
+          "name": "Cranberry Walnut Bread",
+          "description": "A delightful combination of sweet cranberries and crunchy walnuts in every slice.",
+          "price": 10.99,
+          "category": 7,
+          "rating": 4.6,
+          "image_url": "https://cookingformysoul.com/wp-content/uploads/2020/10/cranberry-walnut-bread-slices-min-683x1024.jpg",
+          "image": "cranberry_walnut_bread.jpg"
+        }
+    },
+    {
+        "pk": 94,
+        "model": "products.product",
+        "fields": {
+          "name": "Rosemary Olive Oil Focaccia",
+          "description": "A fragrant and herby focaccia bread infused with rosemary and olive oil.",
+          "price": 13.99,
+          "category": 6,
+          "rating": 4.9,
+          "image_url": "https://i.pinimg.com/originals/fd/03/6e/fd036eedb8412917259b8468bb8bde01.jpg",
+          "image": "rosemary_olive_oil_focaccia.jpg"
+        }
+    },
+    {
+        "pk": 95,
+        "model": "products.product",
+        "fields": {
+          "name": "Sourdough Artisan Loaf",
+          "description": "A tangy and chewy sourdough loaf with a crispy crust, perfect for any meal.",
+          "price": 11.99,
+          "category": 7,
+          "rating": 4.7,
+          "image_url": "https://cdn.sumup.store/2/th640/29f74dfa4bc656115fea20e2a257621c/56afd4c0-00e0-411d-8991-ee74044c5c66.jpeg",
+          "image": "sourdough_artisan_loaf.jpg"
+        }
+    },
+    {
+        "pk": 96,
+        "model": "products.product",
+        "fields": {
+          "name": "Homestyle Apple Pie",
+          "description": "A classic homestyle apple pie with a flaky crust and cinnamon-spiced apple filling.",
+          "price": 17.99,
+          "category": 6,
+          "rating": 4.8,
+          "image_url": "https://th.bing.com/th/id/OIP.aNG2cMHjJzteUNd0eOH6zgAAAA?rs=1&pid=ImgDetMain",
+          "image": "homestyle_apple_pie.jpg"
+        }
     }
+      
   ]
   
