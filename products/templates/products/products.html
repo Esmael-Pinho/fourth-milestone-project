@@ -31,7 +31,31 @@
                                     <a href="">
                                         <img class="card-img-top img-fluid card-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                                     </a>
-                                    product badge
+                                    <div class="product-badge">
+                                        <ul class="badge-c">
+                                            {% if forloop.counter|divisibleby:4 %}
+                                                {% with 'super' as badge %}
+                                                    <li class="badge {{ badge }}">{{ badge|title }}</li>
+                                                {% endwith %}
+                                            {% elif forloop.counter|divisibleby:3 %}
+                                                {% with 'special' as badge %}
+                                                    <li class="badge {{ badge }}">{{ badge|title }}</li>
+                                                {% endwith %}
+                                            {% elif forloop.counter|divisibleby:2 %}
+                                                {% with 'limited' as badge %}
+                                                    <li class="badge {{ badge }}">{{ badge|title }}</li>
+                                                {% endwith %}
+                                            {% elif forloop.counter == 1 %}
+                                                {% with 'new' as badge %}
+                                                    <li class="badge {{ badge }}">{{ badge|title }}</li>
+                                                {% endwith %}
+                                            {% else %}
+                                                {% with 'approved' as badge %}
+                                                    <li class="badge {{ badge }}">{{ badge|title }}</li>
+                                                {% endwith %}
+                                            {% endif %}
+                                        </ul>
+                                    </div>
                                     
                                 </div>
                                 <div class="card-body">
