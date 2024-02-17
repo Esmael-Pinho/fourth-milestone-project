@@ -71,3 +71,29 @@
         </div> 
     </div>
 {% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script>
+    $(document).ready(function(){
+        checkNavigation();
+    
+        // Listen to the carousel slide event and check active item on each slide
+        $('#myCarousel').on('slid.bs.carousel', function () {
+        setTimeout(function() {
+            checkNavigation();
+        }, 10);
+    });
+    
+        function checkNavigation() {
+            if ($('.carousel-item:last').hasClass('active')) {
+                $('.carousel-control-prev').show();
+                $('.carousel-control-next').hide();
+            } else {
+                $('.carousel-control-next').show();
+                $('.carousel-control-prev').hide();
+            }
+        }
+    });
+    </script>
+{% endblock %}
