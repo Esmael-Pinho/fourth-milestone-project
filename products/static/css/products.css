@@ -1,0 +1,33 @@
+:root {
+    --green: #80B500;
+    --grey: #828181;
+    --black: #111;
+    --orange: #FFB800;
+    --white: #fff;
+    --red: #f80606;
+    --yellow: #fff200;
+}
+
+/*  */
+.section-title {
+    font-family: 'Oswald', monospace, sans-serif;
+    font-size: 70px;
+    margin-bottom: 2rem;
+    margin-top: 10rem;
+}
+
+.product-container {
+    margin-top: 4rem auto;
+    gap: 3rem;
+}
+
+.card-g {
+    width: 100%;
+    height: 100%;
+}
+
+.card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+} 
