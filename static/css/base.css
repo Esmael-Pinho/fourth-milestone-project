@@ -123,9 +123,6 @@ main {
     border: 1px solid var(--green);
 }
 
-
-
-
 .green {
     color: var(--green);
 }
@@ -257,9 +254,18 @@ main {
 .navbar-nav .nav-link.active,
 .nav-link:hover,
 .nav-link:focus,
-.dropdown-item:hover,
-.search-form:hover {
+.dropdown-item:hover {
     color: var(--green);
+}
+
+.search-form,
+.search-form:focus {
+    box-shadow: 0 2px 4px rgba(53, 150, 0, 0.4);
+    border-color: var(--green);
+}
+
+.search-form .icon {
+    color: var(--black);
 }
 
 /* Carousel */
