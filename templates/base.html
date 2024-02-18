@@ -38,7 +38,13 @@
     {% endblock %}
 
     {% block extra_js %}
-    
+      <!-- Connecting EmailJs -->
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script>
+          (function() {
+              emailjs.init("zjb6d0aI6Bcvb6s_C");
+          })();
+      </script>
     {% endblock %}
 
     <link rel="icon" type="image/x-icon" href="/media/slider-icon.png">
@@ -171,7 +177,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="">
+                    <a class="link-dark text-decoration-none me-3" href="{% url 'contact' %}">
                         <span class="bold footer-cont">Contact Us</span>
                     </a>
                 </div>

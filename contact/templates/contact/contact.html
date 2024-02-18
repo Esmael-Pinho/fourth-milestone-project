@@ -1,61 +1,112 @@
 {% extends "base.html" %}
 {% load static %}
+
+    {% block corecss %}
+    {{ block.super }}
+        
+    {% endblock %}
+
 {% block content %}
 
     <section class="dash-section" id="contact">
         <div class="container">
-            <div class="text-center cont-us">
-                <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <h3 class="section-subheading white">Send us questions, concerns or simply provide<br>
-                    feedback or report any bugs you may find.</h3>
-            </div>
-            <div class="thank-you-container">
-                <div class="row justify-content-md-center mess-1">
-                    <div class="card text-bg-primary col-sm-12 col-md-7 col-lg-4">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="thank-you-container" data-bs-target="thank-you-container" aria-label="Close"></button>
-                        </div>
-                        <div class="card-body">
-                            <div class="thank-you-message">
+            <div id="contact-div" class=" container-fluid">
+                <div class="row  justify-content-center mb-5">
+                    <div class="col-10">
+                        <h2 class="heading">Contact us</h2>
+                    </div>
+                </div>
 
+                <div class="row justify-content-around">
+                    <div class="col-sm-10 col-lg-6 contact-us-bg">
+                        <div class="text-center cont-us">
+                            <h4 class="w-100">Send questions, concerns provide<br>
+                                feedback or report any bugs you may find.
+                            </h4>
+                        </div>
+                        <div class="thank-you-container">
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                                    <div id="contact-modal" class="modal fade" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Thank you</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="thank-you-message">
+                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <form id="contact-form" onsubmit="return sendEmail(this);">
+                            <div id="contact-container" class="row align-items-stretch mb-5">
+                                <div class="col-12">
+                                    <div class="form-group my-2">
+                                        <!-- Name input-->
+                                        <input class="form-control" id="name" name="name" type="text" placeholder=" Your Name *" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="form-group">
+                                        <!-- Email address input-->
+                                        <input class="form-control" id="email" name="email" type="email" placeholder=" Your Email *" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="form-group mb-md-0">
+                                        <!-- Phone number input-->
+                                        <input class="form-control" id="phone" type="tel" placeholder=" Your Mobile Number">
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="form-group form-group-textarea mb-md-0">
+                                        <!-- Message input-->
+                                        <textarea class="form-control" id="message" name="message" placeholder=" Your Message *" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <span>* Required fields</span>
+                            <div class="text-center contact-btn ">
+                                <button type="submit" id="contact-btn" class="btn submit-btn text-uppercase" aria-label="Send message" data-bs-toggle="modal" data-bs-target="#contact-modal">
+                                    <span>submit</span>
+                                </button>
+                            </div>
+                        </form>
+                        
+                    </div>
+
+                    <div id="contactRight" class="col-sm-10 col-lg-5 contact-us-bg">
+                        <div class="contact-panel" id="contact-panel-right">
+                            <h4 class="text-center cont-us">Find Us <i class="fas fa-search-location"></i></h4>
+                            <div id="map">
+                                <iframe id="mapIframe" title="Map with our location" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1060.5891856360124!2d-57.217700286412885!3d74.58408341110247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNzTCsDM1JzAyLjciTiA1N8KwMTInNTQuNCJX!5e0!3m2!1sen!2snl!4v1681643862668!5m2!1sen!2snl" 
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <p> <strong>Address:</strong>
+                                <br>
+                                <small>Greenland<br>
+                                    HQMM+JXJ Kullorsuaq, Greenland<br>
+                                    <i class="fa-solid fa-envelope hidden" aria-hidden="true"></i> <a class="email" href="mailto:mini@m.co.uk"> mini@m.co.uk</a><br>
+                                    <i class="fa-solid fa-phone hidden" aria-hidden="true"></i> <a class="phone-contact" href="tel:07378838013"> 0737 8838 013</a>
+                                </small><br>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <form id="contact-form" onsubmit="return sendEmail(this);">
-                <div id="contact-container" class="row align-items-stretch mb-5">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <!-- Name input-->
-                            <input class="form-control" id="name" name="name" type="text" placeholder=" Your Name " required>
-                        </div>
-                        <div class="form-group">
-                            <!-- Email address input-->
-                            <input class="form-control" id="email" name="email" type="email" placeholder=" Your Email " required>
-                        </div>
-                        <div class="form-group mb-md-0">
-                            <!-- Phone number input-->
-                            <input class="form-control" id="phone" type="tel" placeholder=" Your Mobile Number" required>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group form-group-textarea mb-md-0">
-                            <!-- Message input-->
-                            <textarea class="form-control" id="message" name="message" placeholder=" Your Message *" required></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center contact-btn">
-                    <input type="submit" id="contact-btn" class="btn btn-warning btn-xl text-uppercase" aria-label="Send message">
-                </div>
-            </form>
-
         </div>
     </section>
     {% endblock %}
 
-{% block postloadjs %}
-{{ block.super }}
-
-{% endblock %}
+    {% block postloadjs %}
+    {{ block.super }}
+        
+    {% endblock %}

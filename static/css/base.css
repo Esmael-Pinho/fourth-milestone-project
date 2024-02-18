@@ -51,6 +51,7 @@ body {
 }
 
 main {
+    margin-bottom: 2rem;
     flex: 1;
 }
 
@@ -88,14 +89,12 @@ main {
     }
 }
 
-
 .button-green {
     position: relative;
     color: var(--white);
     font-size: 16px;
     font-weight: 700;
     padding: 15px 40px;
-    border-radius: 0;
     overflow: hidden;
     background-color: var(--green);
     color: var(--white);
