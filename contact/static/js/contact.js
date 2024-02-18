@@ -11,13 +11,13 @@ $(".btn-close").click(function () {
 // Function to reset the form to its original state
 function resetForm() {
     $("#contact-form")[0].reset(); // Reset the form
-    $("#contact-btn span").text("Submit"); // Reset button text
+    $("#contact-btn").text("Submit"); // Reset button text
 }
 
 // Function to show the thank you modal
 function showThankYouModal() {
     $(".thank-you-container.modal").show();
-    showThankYou();
+    // showThankYou();
 }
 
 // Function to show form again after close-btn clicked
@@ -32,7 +32,7 @@ const originalFormContent = $("#contact-form").html();
 showForm();
 
 function sendEmail(contactForm) {
-    $("#contact-btn span").text("Sending..."); // Change button text
+    $("#contact-btn").text("Sending..."); // Change button text
     emailjs.send("gmail", "pinho", {
         "from_email": contactForm.email.value,
         "from_name": contactForm.name.value,
@@ -41,7 +41,7 @@ function sendEmail(contactForm) {
         .then(
             function (response) {
                 console.log("SUCCESS", response);
-                $("#contact-btn span").text("Msg Sent");
+                $("#contact-btn").text("Msg Sent");
                 resetForm();
                 showThankYouModal();
             },

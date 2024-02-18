@@ -74,8 +74,8 @@
                             </div>
                             <p><span class="red2">* </span> Required fields</p>
                             <div class="text-center contact-btn ">
-                                <button type="submit" id="contact-btn" class="btn submit-btn text-uppercase" aria-label="Send message" data-bs-toggle="modal" data-bs-target="#contact-modal">
-                                    <span>submit</span>
+                                <button type="submit" id="contact-btn" class="btn button-green text-uppercase" aria-label="Send message" data-bs-toggle="modal" data-bs-target="#contact-modal">
+                                    <span class="button-text">Submit</span>
                                 </button>
                             </div>
                         </form>
@@ -109,4 +109,9 @@
     {% block postloadjs %}
     {{ block.super }}
         <script type="text/javascript" src="{% static 'js/contact.js' %}"></script>
+        <script>
+            function submitForm() {
+                document.getElementById('contact-form').submit();
+            }
+            </script>
     {% endblock %}
