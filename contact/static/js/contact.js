@@ -1,12 +1,5 @@
-/*jshint esversion: 6 */
 
-$(".thank-you-container.modal").hide();
-
-// close after pressing X (close) button
-$(".btn-close").click(function () {
-    $(".thank-you-container.modal").hide();
-    resetForm();
-});
+$("#contact-modal").modal("hide");
 
 // Function to reset the form to its original state
 function resetForm() {
@@ -16,20 +9,19 @@ function resetForm() {
 
 // Function to show the thank you modal
 function showThankYouModal() {
-    $(".thank-you-container.modal").show();
-    // showThankYou();
+    $("#contact-modal").modal("show");
 }
 
-// Function to show form again after close-btn clicked
-function showForm() {
-    $(".btn-close").click(function () {
-        $("#contact-form").html(originalFormContent);
-    });
+// Function to show the thank you message in the modal
+function showThankYou() {
+    let thankyouMessage = `
+        <h2>YOUR MESSAGE HAS BEEN SENT</h2>
+        <br>
+        <p>Thank you for the Feedback | Message<br>
+        I appreciate your contribution and will be in touch if required.
+        <br>Have a good day! 🤗</p>`;
+    $('.thank-you-message').html(thankyouMessage);
 }
-
-// form
-const originalFormContent = $("#contact-form").html();
-showForm();
 
 function sendEmail(contactForm) {
     $("#contact-btn").text("Sending..."); // Change button text
@@ -43,22 +35,28 @@ function sendEmail(contactForm) {
                 console.log("SUCCESS", response);
                 $("#contact-btn").text("Msg Sent");
                 resetForm();
-                showThankYouModal();
+                showThankYou(); // Corrected function name
+                $("#contact-modal").modal("show"); // Show the modal
             },
             function (error) {
                 console.log("FAILED", error);
+                // Handle error if needed
+                $("#contact-btn").text("Submit"); // Reset button text in case of failure
             }
         );
     return false;
 }
 
-// message to display after Feedback/Message sent
-function showThankYou() {
-    let thankyouMessage = `
-        <h2>YOUR MESSAGE HAS BEEN SENT</h2>
-        <br>
-        <p>Thank you for the Feedback | Message<br>
-        I appreciate your contribution and will be in touch if required.
-        <br>Have a good day! 🤗</p>`;
-    $('.thank-you-message').html(thankyouMessage);
-}
+// form
+const originalFormContent = $("#contact-form").html();
+
+$("#contact-form").submit(function (event) {
+    event.preventDefault(); // Prevent the default form submission
+    sendEmail(this);
+});
+
+// Your existing code for the close button remains unchanged
+$(".btn-close").click(function () {
+    $("#contact-modal").modal("hide");
+    resetForm();
+});
