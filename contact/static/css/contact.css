@@ -70,6 +70,20 @@
     text-align: center;
 }
 
+.submit-btn {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 40px;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.submit-btn:hover {
+    background-color: var(--white);
+    color: var(--green);
+    transition: all 0.1s ease-in;
+}
+
 .button-text {
     z-index: 1;
 }

@@ -1,5 +1,5 @@
 
-$("#contact-modal").modal("hide");
+$("#contact-modal").hide();
 
 // Function to reset the form to its original state
 function resetForm() {
@@ -9,7 +9,7 @@ function resetForm() {
 
 // Function to show the thank you modal
 function showThankYouModal() {
-    $("#contact-modal").modal("show");
+    $("#contact-modal").show();
 }
 
 // Function to show the thank you message in the modal
@@ -24,7 +24,14 @@ function showThankYou() {
 }
 
 function sendEmail(contactForm) {
+    // Check if form fields are filled
+    if (contactForm.name.value.trim() === '' || contactForm.email.value.trim() === '' || contactForm.message.value.trim() === '') {
+        // Optionally, you can show an error message or perform other actions for empty fields
+        return false;
+    }
+
     $("#contact-btn").text("Sending..."); // Change button text
+
     emailjs.send("gmail", "pinho", {
         "from_email": contactForm.email.value,
         "from_name": contactForm.name.value,
@@ -36,7 +43,7 @@ function sendEmail(contactForm) {
                 $("#contact-btn").text("Msg Sent");
                 resetForm();
                 showThankYou(); // Corrected function name
-                $("#contact-modal").modal("show"); // Show the modal
+                $("#contact-modal").show(); // Show the modal using Bootstrap modal("show")
             },
             function (error) {
                 console.log("FAILED", error);
@@ -57,6 +64,17 @@ $("#contact-form").submit(function (event) {
 
 // Your existing code for the close button remains unchanged
 $(".btn-close").click(function () {
-    $("#contact-modal").modal("hide");
-    resetForm();
+    $("#contact-modal").hide();
 });
+
+// Function to handle modal close event
+$('#contact-modal').on('hidden.bs.modal', function () {
+    resetForm(); // Reset the form when the modal is closed
+    $('.thank-you-message').html(''); // Clear the modal content
+});
+
+// Function to reset the form to its original state
+function resetForm() {
+    $("#contact-form")[0].reset(); // Reset the form
+    $("#contact-btn").text("Submit"); // Reset button text
+}

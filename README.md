@@ -247,6 +247,10 @@ Footer follows the same principle as the navbar, responsive on all screens, with
 
 * *Note:  majority of performance and accessibility, were affected by the extensions I have on the browsers, affecting even on incognito mode.
 
+## Issues 
+Contact
+- Submit button, keeps displaying the modal, even thought no form submition was triggered.
+![Submit-btn](/readMe/errors/submit-btn-error.png)
 # Deployment
 
 ## Creating a Gitpod Workspace
