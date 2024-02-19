@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static %}
+
+    {% block corecss %}
+    {{ block.super }}
+        <link rel="stylesheet" href="{% static 'css/products.css' %}">
+    {% endblock %}
+
+    {% block page_header %}
+        <div class="container header-container">
+            <div class="row">
+                <div class="col"></div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row justify-content-evenly big-title">
+            <div class="col-sm-12 col-md-10 col-lg-6">
+                <div class="section-title-area text-center">
+                    <h1 class="section-title">Product Details</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 ">
+                <div class="image-container my-5">
+                    {% if product.image %}
+                        <a href="{{ product.image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="product-details-container my-5">
+                    <div class="col-sm-12 col-md-6 col-4 text-center pt-1 ratings-section align-center">
+                        {% if product.rating %}
+                            <ul class="list-unstyled d-flex ratings m-auto">
+                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
+                                <li><a href="#"><i class="far fa-star"></i></a></li>
+                            </ul>
+                            <span class="text-muted list-unstyled d-flex">( {{ product.rating }} / 5 )</span>
+                        {% else %}
+                            <small class="text-muted">No Rating</small>
+                        {% endif %}
+                    </div>
+                    <div class="col-sm-12 col-lg-10">
+                        <div class="name-section text-center">
+                            <h4 class="details-name-title text-center mb-0">{{ product.name }}</h4>
+                            <h1 class="product-price-detail text-center bold product-price">
+                                <span>£{{ product.price }}</span>
+                            </h1>
+                        </div>
+                </div>
+                <div class="row add-to-cart-section justify-content-center text-center">
+                    <div class="col-sm-12 col-lg-6">
+                        <button class="btn btn-lg button-green"> add to cart</button>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="div add-to-cart">
+                            <a href="#" aria-label="Add to Cart" class="btn btn-lg button-green text-uppercase">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-0">
+            <div class="image-container my-1">
+                <div class="row category-section justify-content-center">
+                    <h2 class="description-h bold text-center">Description</h2>
+                    <div class="div">
+                        <h6 class="details-category text-center"><small>Category:</small>  {{ product.category.friendly_name }}</h6>
+                    </div>
+                    <div class="div">
+                        <p class="text-center">{{ product.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+
+{% endblock %}

@@ -82,6 +82,7 @@
     background-color: var(--white);
     color: var(--green);
     transition: all 0.1s ease-in;
+    border: 1px solid var(--green);
 }
 
 .button-text {

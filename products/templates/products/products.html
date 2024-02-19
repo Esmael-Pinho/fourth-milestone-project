@@ -70,9 +70,15 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card card-g product-item-hover">
                                 <div class="product-img">
-                                    <a href="">
-                                        <img class="card-img-top img-fluid card-img" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                    </a>
+                                    {% if product.image %}
+                                        <a href="{% url 'product_detail' product.id %}" target="_blank">
+                                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                        </a>
+                                        {% else %}
+                                        <a href="{% url 'product_detail' product.id %}">
+                                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                        </a>
+                                    {% endif %}
                                     <div class="product-badge">
                                         <ul class="badge-c">
                                             {% if forloop.counter|divisibleby:4 %}
