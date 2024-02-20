@@ -2,27 +2,27 @@
     <li class="nav-item dropdown">
       <a class="nav-link fw-bold nav-link-font" href="#" data-bs-toggle="dropdown" aria-expanded="false">All Products</a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="">By Price  <i class="fa-solid fa-dollar-sign"></i></a></li>
-        <li><a class="dropdown-item" href="">By Rating <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half"></i></a></li>
-        <li><a class="dropdown-item" href="">By Category</a></li>
-        <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
+        <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price  <i class="fa-solid fa-dollar-sign"></i></a></li>
+        <li><a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc">By Rating <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half"></i></a></li>
+        <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc">By Category</a></li>
+        <li><a class="dropdown-item" href="{% url 'products' %}?category=fruits_and_vegetables,pizzas,cakes,bread,chocolates,drinks,handmade">All Products</a></li>
       </ul>
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link fw-bold nav-link-font" href="#" data-bs-toggle="dropdown" aria-expanded="false">Organic Products</a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="">Fruits and Vegetables <i class="fa-solid fa-carrot"></i></a></li>
-        <li><a class="dropdown-item" href="">Drinks <i class="fa-solid fa-martini-glass-citrus"></i></a></li>
+        <li><a class="dropdown-item" href="{% url 'products' %}?category=fruits_and_vegetables">Fruits and Vegetables <i class="fa-solid fa-carrot"></i></a></li>
+        <li><a class="dropdown-item" href="{% url 'products' %}?category=drinks">Drinks <i class="fa-solid fa-martini-glass-citrus"></i></a></li>
       </ul>
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link fw-bold nav-link-font" href="#" data-bs-toggle="dropdown" aria-expanded="false">Bakery</a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="">Homemade </a></li>
-        <li><a class="dropdown-item" href="">Cakes <i class="fa-solid fa-cake-candles"></i></a></li>
-        <li><a class="dropdown-item" href="">Breads <i class="fa-solid fa-bread-slice"></i></a></li>
-        <li><a class="dropdown-item" href="">Pizzas <i class="fa-solid fa-pizza-slice"></i></a></li>
-        <li><a class="dropdown-item" href="">Chocolates <i class="fa-solid fa-cookie-bite"></i></a></li>
+        <li><a class="dropdown-item" href="{% url 'products' %}?category=homemade">Homemade </a></li>
+        <li><a class="dropdown-item" href="{% url 'products' %}?category=cakes">Cakes <i class="fa-solid fa-cake-candles"></i></a></li>
+        <li><a class="dropdown-item" href="{% url 'products' %}?category=bread">Breads <i class="fa-solid fa-bread-slice"></i></a></li>
+        <li><a class="dropdown-item" href="{% url 'products' %}?category=pizzas">Pizzas <i class="fa-solid fa-pizza-slice"></i></a></li>
+        <li><a class="dropdown-item" href="{% url 'products' %}?category=chocolates">Chocolates <i class="fa-solid fa-cookie-bite"></i></a></li>
       </ul>
     </li>
     <li class="nav-item">

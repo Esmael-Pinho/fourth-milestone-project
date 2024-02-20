@@ -72,11 +72,11 @@
                                 <div class="product-img">
                                     {% if product.image %}
                                         <a href="{% url 'product_detail' product.id %}">
-                                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                            <img class="card-img-top card-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                                         </a>
                                         {% else %}
                                         <a href="{% url 'product_detail' product.id %}">
-                                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                            <img class="card-img-top card-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                         </a>
                                     {% endif %}
                                     <div class="product-badge">
@@ -107,7 +107,7 @@
                                     <div class="product-hover-action ">
                                         <ul class="list-unstyled ">
                                             <li class="text-center">
-                                                <a href="" title="Quick View">
+                                                <a href="{% url 'product_detail' product.id %}" title="Quick View">
                                                     <i class="far fa-eye"></i>
                                                 </a>
                                             </li>
@@ -143,14 +143,14 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="product-title-area text-center">
-                                                <h2 class="product-title d-flex"><a href="">{{ product.name }}</a></h2>
+                                                <h2 class="product-title d-flex"><a href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h2>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="product-price text-center">
                                                 <span>£{{ product.price }}</span>
                                                 <del class="red1">£{{ product.price|add:product.price|floatformat:2 }}</del>
-                                            </div>                                                             
+                                            </div>                                                                
                                         </div>
                                     </div>
                                 </div>
