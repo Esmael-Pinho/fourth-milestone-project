@@ -71,7 +71,7 @@
                             <div class="card card-g product-item-hover">
                                 <div class="product-img">
                                     {% if product.image %}
-                                        <a href="{% url 'product_detail' product.id %}" target="_blank">
+                                        <a href="{% url 'product_detail' product.id %}">
                                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                         </a>
                                         {% else %}

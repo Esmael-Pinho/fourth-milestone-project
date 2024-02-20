@@ -157,6 +157,8 @@ main {
 .search-form:focus {
     box-shadow: 0 2px 4px rgba(53, 150, 0, 0.4);
     border-color: var(--green);
+    color: var(--green);
+    font-weight: 600;
 }
 
 .search-form .icon {
