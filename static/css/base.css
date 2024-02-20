@@ -50,6 +50,10 @@ body {
     min-height: 100vh;
 }
 
+h2 {
+    font-weight: 600;
+}
+
 main {
     margin-bottom: 2rem;
     flex: 1;
@@ -97,6 +101,8 @@ main {
     padding: 15px 40px;
     overflow: hidden;
     background-color: var(--green);
+    transition: all 0.2s ease 0s;
+    z-index: 1;
 }
 
 .button-green::before {
@@ -120,6 +126,32 @@ main {
     color: var(--green);
     border: 1px solid var(--green);
 }
+
+.button-green span {
+    display: inline-block;
+    position: relative;
+    transition: 0.1s;
+}
+
+.button-green span::before {
+    content: '\00ab';
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    top: -4px;
+    left: -20px;
+    transition: 0.1s;
+}
+  
+.button-green:hover span {
+    padding-left: 25px;
+}
+
+.button-green:hover span:before {
+    opacity: 1;
+    left: 0;
+}
+  
 
 .green {
     color: var(--green);

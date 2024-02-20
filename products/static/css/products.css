@@ -12,7 +12,8 @@
 .section-title {
     font-family: 'Oswald', monospace, sans-serif;
     font-size: 70px;
-    margin: 2.5rem;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
 }
 
 .yellow {
@@ -280,8 +281,8 @@
 
 /* Product details */
 
-.big-title {
-    margin-top: 5rem;
+.header-container {
+    padding-top: 60px;
 }
 
 .card-space .card-body {
@@ -300,7 +301,10 @@
 
 .product-price-detail {
     font-size: 80px;
-    margin: 2.5rem;
+}
+
+sup {
+    font-size: 0;
 }
 
 .details-category {
@@ -356,11 +360,16 @@
     margin-right: 0;
 }
 
+.back-btn {
+    margin-right: 5.5rem;
+}
+
 /* Media Queries */
 
 @media (max-width: 992px) {
     .section-title {
-        margin-top: 6.5rem;
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
     }
 
     .card-g:hover .product-hover-action {
@@ -368,7 +377,7 @@
     }
 
     .add-to-cart {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .details-card-body {
@@ -389,6 +398,11 @@
 
     .card-g:hover .product-hover-action {
         visibility: hidden;
+    }
+
+    .back-btn {
+        margin-right: .5rem;
+        margin-bottom: 2rem;
     }
 
     
