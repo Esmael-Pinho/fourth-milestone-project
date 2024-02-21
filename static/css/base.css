@@ -223,18 +223,30 @@ main {
 }
 
 .message-container {
-    position: fixed;
-    top: 185px;
-    right: 15px;
-    z-index: 999999999;
+    /* position: fixed; */
+    bottom: 300px;
+    right: 100px;
+    z-index: 1;
+    width: 400px;
 }
+
+.toast {
+    opacity: 1;
+}
+
+/* .bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+} */
+
 
 .custom-toast {
     overflow: visible;
 }
 
 .toast-capper {
-    height: 4px;
+    height: 10px;
 }
 
 /* Carousel */
