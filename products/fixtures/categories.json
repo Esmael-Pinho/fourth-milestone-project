@@ -43,8 +43,8 @@
       "pk": 6,
       "model": "products.category",
       "fields": {
-        "name": "homemade",
-        "friendly_name": "Homemade"
+        "name": "handmade",
+        "friendly_name": "Handmade"
       }
     },
     {

@@ -63,7 +63,22 @@
                     {% else %}
                         {% for c in current_categories %}
                             <h1 class="section-title ">
-                                {{ c.friendly_name }}
+                                {{ c.friendly_name }} 
+                                {% if c.name == 'fruits_and_vegetables' %}
+                                    <i class="fa-solid fa-carrot"></i>
+                                {% elif c.name == 'pizzas' %}
+                                    <i class="fa-solid fa-pizza-slice"></i>
+                                {% elif c.name == 'cakes' %}
+                                    <i class="fa-solid fa-birthday-cake"></i>
+                                {% elif c.name == 'bread' %}
+                                    <i class="fa-solid fa-bread-slice"></i>
+                                {% elif c.name == 'chocolates' %}
+                                    <i class="fa-solid fa-cookie-bite"></i>
+                                {% elif c.name == 'drinks' %}
+                                    <i class="fa-solid fa-martini-glass-citrus"></i>
+                                {% elif c.name == 'handmade' %}
+                                    <i class="fa-solid fa-hand-holding-heart"></i>
+                                {% endif %}
                             </h1>
                         {% endfor %}
                     {% endif %}
@@ -222,4 +237,12 @@
             </div>
         </div>
     </div>
+    <div>
+        <a id="scrollUp" class="text-decoration-none" href="#top" title="Back to Top"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+    <script type="text/javascript" src="{% static 'js/products.js'%}"></script>
 {% endblock %}
