@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
+
 {% block corecss %}
     {{ block.super }}
         <link rel="stylesheet" href="{% static 'css/bag.css' %}">
@@ -17,51 +18,128 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
+        <div class="row justify-content-center d-none d-lg-block">
+            <div class="col-lg-12">
                 {% if bag_items %}
-                    <div class="table-responsive rounded">
-                        {{ bag_items }}
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive bag-table align-middle">
+                      <div class="container">
+                        <table class="table">
+                          <thead class="text-black">
+                            <tr>
+                                <th scope="col">Delete</th>
+                                <th colspan="2" scope="col"> Product Image</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Price</th>
+                                <th colspan="2" scope="col">Quantity</th>
+                                <th colspan="2" scope="col">Subtotal</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {% for item in bag_items %}
+                              <tr>
+                                <td scope="col" class="cart-product-remove">
+                                  <div class="cart-remove">
+                                      <button class="btn">X</button>
+                                  </div>
+                                </td>
+                                <td colspan="1" scope="col ">
+                                  <div class="cart-product-image">
+                                      <a href="">
+                                        <img class="card-img-top card-img" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                      </a>
+                                  </div>
+                                </td>
+                                <td colspan="2" scope="col cart-product-info">
+                                  <h5 class="bag-prod-name"><a href="">{{ item.product.name }}</a></h5>
+                                  <small>{{ item.category.friendly_name }}</small>
+                                </td>
+                                <td scope="col cart-product-price">
+                                  <p class="my-0 cart-price">£{{ item.product.price }}</p>
+                                </td>
+                                <td colspan="2" scope="col cart-product-quantity">
+                                  <input class="form-control qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                </td>
+                                <td colspan="2" class="cart-product-subtotal">£{{ item.product.price }}</td>
+                              </tr>
+                            {% endfor %}
+                            <td class="text-start">
+                                <div class="btn-wrapper text-right text-end me-3">
+                                   <a title="Delete" href="" class="btn button-green text-uppercase delete-btn">delete all</a>
+                              </div>
+                            </td>
+                            <td colspan="7"></td> 
+                            <td class="text-end">
+                                <button title="Update" type="" class="btn button-green text-uppercase">Update Bag</button>
+                            </td>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
+                    <div class="shopping-cart-container">
+                      <div class="row justify-content-end">
+                          <div class="col-sm-12 col-md-10 col-lg-6">
+                            <div class="shoping-cart-total mt-5">
+                              <h4 class="bold">Cart Totals</h4>
+                              <table class="table table-sm total-table">
+                                  <tbody>
+                                      <tr>
+                                          <th>Subtotal</th>
+                                          <td >
+                                            <h6>
+                                              £{{ item.product.price }}
+                                            </h6>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <th>Delivery:</th>
+                                          <td>
+                                            <h6>
+                                              <h6> £{{ delivery|floatformat:2 }}</h6>
+                                              {% if free_delivery_delta > 0 %}
+                                                <h6 class="mb-1 text-danger">
+                                                    You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
+                                                </h6>
+                                              {% else %}
+                                                  <h6 class="text-success"> Free delivery in effect !</h6>
+                                              {% endif %}
+                                            </h6>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <th><strong>Order Total:</strong></th>
+                                          <td>
+                                              <h6 class="coupoun-msg text-success"> £{{ total|floatformat:2 }}</h6>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                              <div class="row justify-content-evenly">
+                                <div class="col-sm-12 col-md-8 col-lg-5 bag-btn-back">
+                                    <div class="div-back-btn text-center pt-1">
+                                      <a href="{% url 'products' %}" title="Keep Shopping" aria-label="Go back" class="btn button-green text-uppercase back-btn ms-3"><span> go back</span></a>
+                                    </div>
+                                </div>
+                                  <div class="col-sm-12 col-md-8 col-lg-5">
+                                      <div class="btn-wrapper text-right text-end me-3">
+                                        <a title="checkout" href="" class="btn button-green text-uppercase check-btn">checkout</a>
+                                     </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
                 {% else %}
-                    <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Keep Shopping</span>
-                    </a>
+                    <h4 class="lead mb-5">Your bag is empty.</h4>
+                    <div class="col-sm-12 col-lg-5 pt-1">
+                      <div class="div text-center pt-1">
+                          <a href="{% url 'products' %}" title="Keep Shopping" aria-label="Go back" class="btn btn-sm button-green text-uppercase back-btn "><span> go back</span></a>
+                      </div>
+                  </div>>
                 {% endif %}
             </div>
         </div>
     </div>
+    {% include 'includes/bag_mobile.html' %}
+</div>
 {% endblock %}

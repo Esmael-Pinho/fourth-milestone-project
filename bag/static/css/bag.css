@@ -1,7 +1,96 @@
-.bag-title {
-    margin-top: 6.5rem;
-    font-size: 50px;
+
+
+@media (min-width: 993px) {
+    .bag-title {
+        margin-top: 6.5rem;
+        font-size: 50px;
+    }
+
+    .cart-product-image {
+        max-width: 350px; 
+        max-height: 250px; 
+        margin: 0 auto; 
+        overflow: hidden; 
+    }
+
+    .responsive-image {
+        max-width: 100%; 
+        max-height: 100%;
+        height: auto; 
+        display: block; 
+    }
+    
+    tbody .cart-product-remove {
+        padding: 20px 25px;
+        vertical-align: middle;
+    }
+    
+    .cart-remove button {
+        padding: 5px 10px;
+        font-weight: 600;
+        color: var(--red);
+        font-size: 28px;
+    }
+
+    .bag-table th {
+        padding-left: 20px;
+    }
+    
+    .bag-table td {
+        padding: 20px 25px;
+        vertical-align: middle;
+    }
+    
+    .cart-price {
+        color: var(--green);
+    }
+    
+    .cart-price,
+    .cart-product-subtotal {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    
+    .bag-prod-name a {
+        text-decoration: none;
+        color: var(--black);
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .bag-prod-name a:hover {
+        color: var(--green);
+    }
+    
+    .shoping-cart-container {
+        max-width: 550px;
+        margin: lef;
+    }
+    
+    .total-table td {
+        text-align: end;
+        padding-right: 20px;
+    }
+    
+    .total-table th {
+        padding-left: 10px;
+    }
+    
+    .div-back-btn a {
+        width: 180px;
+    }
+    
+    .btn-wrapper a {
+        margin-top: 4px;
+        background-color: var(--red);
+    }
+    
 }
 
-
-
+@media (max: 992px) {
+    .delete-btn {
+        background-color: var(--red);
+        color: var(--white);
+        font-weight: 600;
+        font-size: 16px;
+    }
+}

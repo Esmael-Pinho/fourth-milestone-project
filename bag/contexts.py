@@ -3,7 +3,6 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
-
 def bag_contents(request):
 
     bag_items = []
@@ -41,21 +40,3 @@ def bag_contents(request):
     }
 
     return context
-
-
-
-
-def apply_promo_code(total, promo_code):
-    # Check if the promo code is valid and apply the discount
-    if promo_code == 'HALFOFF':
-        return total * Decimal('0.5') 
-    else:
-        return total
-
-    # Calculate total without any discounts
-    for item in bag_items:
-        total += item['quantity'] * item['product'].price
-
-    # Apply promo code discount 
-    promo_code = request.GET.get('promo_code')
-    total = apply_promo_code(total, promo_code)
