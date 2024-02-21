@@ -1,6 +1,6 @@
 
 #contact .container {
-    padding-top: 5rem;
+    padding-top: 1rem;
 }
 
 .form-group textarea {
@@ -25,34 +25,9 @@
 }
 
 
-.heading {
-    margin-top: 2.5rem;
-    text-align: center;
-    position: relative;
-}
-
-.heading::before {
-    content: " ";
-    display: block;
-    width: 40%;
-    height: .1rem;
-    top: 50%;
-    left: .85rem;
-    position: absolute;
-    background-color: var(--green);
-    z-index: 3;
-}
-
-.heading::after {
-    content: " ";
-    display: block;
-    width: 40%;
-    height: .1rem;
-    top: 50%;
-    right: .85rem;
-    position: absolute;
-    background-color: var(--green);
-    z-index: 3;
+.contact-title {
+    margin-top: 6rem;
+    font-size: 50px;
 }
 
 .contact-us-bg {
