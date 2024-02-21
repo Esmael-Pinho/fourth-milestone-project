@@ -222,6 +222,21 @@ main {
     color: var(--black);
 }
 
+.message-container {
+    position: fixed;
+    top: 185px;
+    right: 15px;
+    z-index: 999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 4px;
+}
+
 /* Carousel */
 #myCarousel {
     padding-top: .5rem;

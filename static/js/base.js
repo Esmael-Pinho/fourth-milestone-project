@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $('.toast-container').toast('show');
+
     // Click event for the "Search" link
     $(".list-inline-item.search-btn ").on("click", function(e) {
         // Toggle the collapse class on the navbar
