@@ -37,6 +37,10 @@
         color: var(--red);
     }
 
+    table {
+        border-collapse: initial;
+    }
+
     .bag-table th {
         padding-left: 20px;
     }
@@ -44,6 +48,11 @@
     .bag-table td {
         padding: 20px 25px;
         vertical-align: middle;
+    }
+
+    .bag-table .cart-product-info {
+        vertical-align: top;
+        padding-top: 20px;
     }
     
     .cart-price {
