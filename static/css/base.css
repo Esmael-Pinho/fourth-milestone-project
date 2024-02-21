@@ -66,6 +66,10 @@ main {
 
 /* Colors */
 
+.text-success {
+    color: var(--green) !important;
+}
+
 .glow-1 {
     animation: glow1 1s ease-in-out infinite alternate;
 }
@@ -469,3 +473,4 @@ main {
         margin: 0 auto;
     }
   }
+
