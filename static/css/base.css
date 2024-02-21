@@ -175,14 +175,11 @@ main {
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     #search-bar {
         display: none;
     }
 
-    .navbar-nav {
-        display: block !important; 
-    }
 }
 
 @media (max-width: 576px) {

@@ -284,6 +284,10 @@
 
 /* Product details */
 
+.details-title {
+    margin-top: 4rem;
+}
+
 .header-container {
     padding-top: 60px;
 }
@@ -364,7 +368,7 @@ sup {
 }
 
 .back-btn {
-    margin-right: 5.5rem;
+    font-size: 16px;
 }
 
 .small {
@@ -376,6 +380,15 @@ sup {
 .small a:hover {
     color: var(--green);
 }
+
+.add-btn {
+    font-size: 15px;
+}
+
+.text-align-start {
+    margin-bottom: 0.345rem;
+}
+
 
 #scrollUp {
     background-color: #F7F5EB;
@@ -409,22 +422,17 @@ a#scrollUp:hover {
 
 
 /* Media Queries */
-@media (max-width: 991px) {
-    #scrollUp {
-        font-size: 16px;
-        height: 30px;
-        width: 30px;
-        bottom: 50px;
+@media (min-width: 992px) {
+    .button-green {
+        padding: 16px 20px;
     }
 
-    #scrollUp i {
-        line-height: 30px;
+    .add-btn {
+        width: 150px;
     }
 }
 
-
-
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .section-title {
         margin-top: 5rem;
         margin-bottom: 1.5rem;
@@ -463,6 +471,33 @@ a#scrollUp:hover {
         margin-bottom: 2rem;
     }
 
+    .add-to-cart-section form.form-group {
+        width: 50% !important;
+    }
+
+    .detail-group {
+        margin: 0 auto;
+    }
+
+    .button-green span::before {
+        display: none;
+    }
+    
+    .detail-group .input-group {
+        margin: 0 auto;
+        width: 50% !important;
+    }
+
+    #scrollUp {
+        font-size: 16px;
+        height: 30px;
+        width: 30px;
+        bottom: 50px;
+    }
+
+    #scrollUp i {
+        line-height: 30px;
+    }
     
 }
 

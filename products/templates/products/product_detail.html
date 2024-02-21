@@ -19,7 +19,7 @@
         <div class="row justify-content-center big-title">
             <div class="col-sm-12 col-md-10 col-lg-8">
                 <div class="section-title-area text-center">
-                    <h1 class="section-title">Product Details</h1>
+                    <h1 class="section-title details-title">Product Details</h1>
                 </div>
             </div>
         </div>
@@ -66,22 +66,33 @@
                                 </sup>
                             </h1>
                         </div>
-                        <div class="row add-to-cart-section justify-content-evenly text-center">
-                            <div class="col-sm-12 col-lg-5 m-0 p-0">
-                                <div class="div add-to-cart">
-                                    <a href="#" aria-label="Add to Cart" class="btn btn-sm button-green text-uppercase">add to cart</a>
+                        <div class="row add-to-cart-section justify-content-center text-center">
+                            <form class="form" action="" method="POST">
+                                {% csrf_token %}
+                                <div class="form-row row justify-content-evenly">
+                                    <div class="col-sm-12 col-lg-4 m-0 p-0">
+                                        <p class="text-align-start text-center"><strong>Quantity:</strong></p>
+                                        <div class="form-group detail-group">
+                                            <div class="input-group">
+                                                <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-5 mt-3 p-0">
+                                        <div class="div add-to-cart">
+                                            <a href="#" aria-label="Add to Cart" class="btn btn-sm button-green text-uppercase add-btn">add to cart</a>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                 </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-5 m-0 p-0">
-                                <div class="div add-to-cart">
-                                    <a href="#" aria-label="Add to Cart" class="btn btn-sm button-green text-uppercase">add to cart</a>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="div text-center">
-                    <a href="#" aria-label="Go back" class="btn btn-sm button-green text-uppercase back-btn"><span> go back</span></a>
+                <div class="col-sm-12 col-lg-5 pt-1">
+                    <div class="div text-center pt-1">
+                        <a href="{% url 'products' %}" title="Keep Shopping" aria-label="Go back" class="btn btn-sm button-green text-uppercase back-btn "><span> go back</span></a>
+                    </div>
                 </div>
             </div>
         </div>
