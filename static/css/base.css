@@ -157,6 +157,11 @@ main {
     left: 0;
 }
   
+.btn-black,
+.btn-black:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
 
 .green {
     color: var(--green);
