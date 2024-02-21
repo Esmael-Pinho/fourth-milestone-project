@@ -14,6 +14,19 @@
     font-size: 70px;
     margin-top: 9rem;
     margin-bottom: 3rem;
+    border-bottom: 1px solid var(--green);
+    border-width: 4px;
+    display: inline-block; 
+}
+
+.prod-count {
+    color: var(--green);
+    text-decoration: none;
+}
+
+.prod-count:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--black);
 }
 
 .yellow {
@@ -362,6 +375,16 @@ sup {
 
 .back-btn {
     margin-right: 5.5rem;
+}
+
+.small {
+    margin: 0;
+    font-size: 15px;
+    color: var(--black);
+}
+
+.small a:hover {
+    color: var(--green);
 }
 
 /* Media Queries */
