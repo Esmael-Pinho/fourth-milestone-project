@@ -1,9 +1,22 @@
+
+.remove-item {
+    margin-left: 70px;
+}
+
+#remove-57 {
+    margin-left: 90px;
+}
+
+.bag-title {
+    margin-top: 0 !important;
+}
+
 /* -------------------------------- Media Queries */
 
 
 @media (min-width: 993px) {
     .bag-title {
-        margin-top: 6.5rem;
+        margin-top: 9.5rem;
         font-size: 50px;
     }
 
@@ -35,10 +48,6 @@
 
     .cart-remove button:hover {
         color: var(--red);
-    }
-
-    table {
-        border-collapse: initial;
     }
 
     .bag-table th {

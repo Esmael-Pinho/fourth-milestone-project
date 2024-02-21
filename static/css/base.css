@@ -163,6 +163,12 @@ main {
     color: var(--white);
 }
 
+.update-link,
+.remove-item {
+    cursor: pointer;
+} 
+
+
 .green {
     color: var(--green);
 }
