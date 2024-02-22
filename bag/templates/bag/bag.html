@@ -41,7 +41,13 @@
                         {% for item in bag_items %}
                             <tr>
                                 <td class="p-3 w-25 bag-img-container">
-                                    <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                    <a href="{% url 'product_detail' item.product.id %}">
+                                        {% if item.product.image %}
+                                            <img class="img-fluid rounded image-size" src="{{ item.product.image.url }}">
+                                        {% else %}
+                                            <img class="img-fluid rounded image-size" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                        {% endif %}
+                                    </a>
                                 </td>
                                 <td class="py-3 cart-product-info">
                                     <h6 class="my-0 bag-prod-name"><strong>{{ item.product.name }}</strong></h6>
@@ -111,7 +117,7 @@
                                                     <h6>
                                                     <h6> £{{ delivery|floatformat:2 }}</h6>
                                                     {% if free_delivery_delta > 0 %}
-                                                        <h6 class="mb-1 text-danger">
+                                                        <h6 class="mb-1 text-warning">
                                                             <i class="fas fa-exclamation-circle"></i> You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
                                                         </h6>
                                                     {% else %}
@@ -135,14 +141,20 @@
                     <div class="row justify-content-md-end">
                         <div class="col-12 col-lg-6">
                             <div class="row justify-content-md-around">
-                                <div class="col-sm-12 col-md-6 col-lg-5 bag-btn-back">
+                                <div class="col-sm-12 col-md-6 col-lg-5 bag-btn-back check-margin-sm">
                                     <div class="div-back-btn text-center text-lg-start pt-1">
-                                    <a href="{% url 'products' %}" title="Keep Shopping" aria-label="Go back" class="btn button-green text-uppercase back-btn ms-3"><span> go back</span></a>
+                                    <a href="{% url 'products' %}" title="Keep Shopping" aria-label="Go back" class="btn button-green text-uppercase back-btn ms-3">
+                                        <i class="fa-solid fa-angles-left"></i>
+                                        <span> go back</span>
+                                    </a>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-5">
                                     <div class="btn-wrapper text-center text-lg-end pt-1">
-                                        <a title="checkout" href="{% url 'checkout' %}" class="btn button-green text-uppercase  red">checkout</a>
+                                        <a title="checkout" href="{% url 'checkout' %}" class="btn button-green text-uppercase  red">
+                                            <span>checkout</span>
+                                            <i class="fa-solid fa-angles-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -151,6 +163,7 @@
                 {% else %}
                     <h4 class="lead mb-5">Your bag is empty.</h4>
                     <a href="{% url 'products' %}" class="btn button-green rounded-0 btn-lg">
+                        <i class="fa-solid fa-angles-left"></i>
                         <span class="text-uppercase">Keep Shopping</span>
                     </a>
                 {% endif %}

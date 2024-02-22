@@ -1,15 +1,15 @@
-<div class="toast toast-container custom-toast position-fixed bottom-0 end-0 p-3 rounded-0" data-autohide="false">
-    <div class="arrow-up arrow-info"></div>
-    <div class="w-100 toast-capper bg-info"></div>
-    <div id="liveToast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-        <strong class="me-auto">Alert!</strong>
-        <button type="button" class="btn-close bg-danger" data-bs-dismiss="toast" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+<div class="toast fade custom-toast show"  aria-live="assertive" aria-atomic="true">
+  <div class="arrow-up arrow-success"></div>
+  <div class="toast-header">
+  <strong class="me-auto">Info!</strong>
+  <div class="w-100 toast-capper bg-info"></div>
+  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"><i class="fa-regular fa-circle-xmark"></i></button>
+  </div> 
+  <div class="toast-body bg-white">
+      <div class="row">
+        <div class="col">
+          {{ message }}
+        </div>
       </div>
-      <div class="toast-body bg-white">
-        {{ message }} 
-      </div>
-    </div>
+  </div>
 </div>

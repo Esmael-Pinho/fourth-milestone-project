@@ -7,7 +7,18 @@
     margin-bottom: 2rem;
 }
 
+
+
 /* -------------------------------- Media Queries */
+
+
+
+@media (min-width: 1200px) {
+    .image-size {
+        max-width: 250%;
+        height: 250px;
+    }
+}
 
 @media (max-width: 992px) {
     .bag-title {
@@ -48,6 +59,11 @@
     .total-table th {
         padding-left: 10px;
     }
+
+    .image-size {
+        max-width: 150%;
+        height: 200px;
+    }
     
 }
 
@@ -55,6 +71,18 @@
     .bag-title {
         font-size: 28px;
     }
+
+    .image-size {
+        max-width: 100%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    .check-margin-sm {
+        margin-bottom: 1rem;
+    }
+
 }
 
 @media (max-width: 528px) {

@@ -152,6 +152,12 @@ main {
     color: var(--yellow);
 }
 
+/*  */
+
+.mini-m-navbar {
+    box-shadow: 0 1px 3px 0 var(--green);
+}
+
 .section-title,
 .bag-title,
 .contact-title {
