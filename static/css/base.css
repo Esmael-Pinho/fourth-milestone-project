@@ -132,7 +132,6 @@ main {
     border: 1px solid var(--green);
 }
 
-  
 .btn-black,
 .btn-black:hover {
     background-color: var(--black);
@@ -199,9 +198,6 @@ main {
 }
 
 /* Toast */
-.custom-toast {
-    overflow: visible;
-}
 
 .bag-notification-wrapper {
     height: 300px;
@@ -232,6 +228,7 @@ main {
 
 .custom-toast {
     overflow: visible;
+    position: fixed;
 }
 
 .toast-capper {

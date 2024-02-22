@@ -43,16 +43,16 @@
 
 @keyframes slide {
     0% {
-      transform: translateX(70%);
+        transform: translateX(70%);
     }
     90% {
-      transform: translateX(-75%);
-      animation-timing-function: ease-out;
+        transform: translateX(-75%);
+        animation-timing-function: ease-out;
     }
     100% {
-      transform: translateX(-75%);
-      animation-timing-function: ease-out;
-      animation-delay: 1s;
+        transform: translateX(-75%);
+        animation-timing-function: ease-out;
+        animation-delay: 1s;
     }
 }
 
@@ -121,7 +121,7 @@
             font-size: 35px;
         }
     }
-  }
+}
 
 .product-container {
     margin-top: 4rem auto;

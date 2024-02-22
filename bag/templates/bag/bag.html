@@ -92,7 +92,7 @@
                     </table>
                     <div class="row justify-content-end">
                         <div class="col-sm-12 col-md-10 col-lg-6">
-                            <table class="table table-sm total-table" >
+                            <table class="table table-sm total-table bag-container-bg" >
                                 <div class="shopping-cart-container">
                                     <div class="shoping-cart-total mt-5">
                                     <h4 class="bold">Bag Totals</h4>
@@ -101,21 +101,21 @@
                                                 <th>Subtotal</th>
                                                 <td >
                                                     <h6>
-                                                    £{{ item.product.price }}
+                                                    £{{ total|floatformat:2 }}
                                                     </h6>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th>Delivery:</th>
+                                                <th>Delivery fee:</th>
                                                 <td>
                                                     <h6>
                                                     <h6> £{{ delivery|floatformat:2 }}</h6>
                                                     {% if free_delivery_delta > 0 %}
                                                         <h6 class="mb-1 text-danger">
-                                                            You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
+                                                            <i class="fas fa-exclamation-circle"></i> You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
                                                         </h6>
                                                     {% else %}
-                                                        <h6 class="text-success"> Free delivery in effect !</h6>
+                                                        <h6 class="text-success"> No delivery fees for you ! <i class="fa-regular fa-thumbs-up"></i></h6>
                                                     {% endif %}
                                                     </h6>
                                                 </td>
@@ -123,7 +123,7 @@
                                             <tr>
                                                 <th><strong>Order Total:</strong></th>
                                                 <td>
-                                                    <h6 class="text-danger bold"> £{{ total|floatformat:2 }}</h6>
+                                                    <h6 class="text-danger bold"> £{{ grand_total|floatformat:2 }}</h6>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -142,7 +142,7 @@
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-5">
                                     <div class="btn-wrapper text-center text-lg-end pt-1">
-                                        <a title="checkout" href="" class="btn button-green text-uppercase  red">checkout</a>
+                                        <a title="checkout" href="{% url 'checkout' %}" class="btn button-green text-uppercase  red">checkout</a>
                                     </div>
                                 </div>
                             </div>
