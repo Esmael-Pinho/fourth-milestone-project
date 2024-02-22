@@ -70,7 +70,7 @@
                             <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                                 {% csrf_token %}
                                 <div class="form-row row justify-content-evenly">
-                                    <div class="col-sm-12 col-lg-5 m-0 p-0">
+                                    <div class="col-sm-12 m-0 p-0">
                                         <p class="text-align-start text-center"><strong>Quantity:</strong></p>
                                         <div class="form-group w-100">
                                             <div class="input-group">
@@ -97,6 +97,11 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-sm-12 col-lg-5 p-0 mt-3">
+                                        <div class="div text-center pt-1">
+                                            <a href="{% url 'products' %}" title="Keep Shopping" aria-label="Go back" class="btn btn-sm button-green text-uppercase back-btn "><span> go back</span></a>
+                                        </div>
+                                    </div>
                                     <div class="col-sm-12 col-lg-5 mt-3 p-0">
                                         <div class="div add-to-cart">
                                             <button type="submit" aria-label="Add to Cart" class="btn btn-sm button-green text-uppercase add-btn">
@@ -108,11 +113,6 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-5 pt-1">
-                    <div class="div text-center pt-1">
-                        <a href="{% url 'products' %}" title="Keep Shopping" aria-label="Go back" class="btn btn-sm button-green text-uppercase back-btn "><span> go back</span></a>
                     </div>
                 </div>
             </div>

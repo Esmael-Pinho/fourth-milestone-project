@@ -369,6 +369,7 @@ sup {
 
 .back-btn {
     font-size: 16px;
+    background-color: var(--black);
 }
 
 .small {

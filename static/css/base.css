@@ -132,30 +132,6 @@ main {
     border: 1px solid var(--green);
 }
 
-.button-green span {
-    display: inline-block;
-    position: relative;
-    transition: 0.1s;
-}
-
-.button-green span::before {
-    content: '\00ab';
-    font-size: 20px;
-    position: absolute;
-    opacity: 0;
-    top: -4px;
-    left: -20px;
-    transition: 0.1s;
-}
-  
-.button-green:hover span {
-    padding-left: 25px;
-}
-
-.button-green:hover span:before {
-    opacity: 1;
-    left: 0;
-}
   
 .btn-black,
 .btn-black:hover {
@@ -222,24 +198,37 @@ main {
     color: var(--black);
 }
 
-.message-container {
-    /* position: fixed; */
-    bottom: 300px;
-    right: 100px;
-    z-index: 1;
-    width: 400px;
+/* Toast */
+.custom-toast {
+    overflow: visible;
+}
+
+.bag-notification-wrapper {
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .toast {
     opacity: 1;
+    z-index: 999;
+    position: absolute;
+    top: 81px;
+    right: 8px;
 }
 
-/* .bag-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
-} */
+.toast-header .btn-close {
+    color: var(--red);
+    font-size: 26px;
+    margin-top: 0;
+    padding-top: 0;
+    background-image: none;
+    border: none;
+}
 
+.toast-header .btn-close:focus {
+    border: none;
+}
 
 .custom-toast {
     overflow: visible;
@@ -247,6 +236,10 @@ main {
 
 .toast-capper {
     height: 10px;
+}
+
+.red {
+    background-color: var(--red);
 }
 
 /* Carousel */
@@ -448,16 +441,16 @@ main {
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
-      max-width: 90%;
+    max-width: 90%;
     }
 
     .logo-text strong {
         margin: auto auto;
     }
-  }
-  
+}
+
   /* fixed top navbar only on medium and up */
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
     .header-container {
         padding-top: 194px;
     }
@@ -485,7 +478,7 @@ main {
     /* Carousel */
     .carousel-control-prev,
     .carousel-control-next {
-      display: none !important;
+        display: none !important;
     }
 
     .slider-img {
@@ -497,18 +490,22 @@ main {
         margin-top: 9.5rem;
         padding-top: 40px;
     }
+
+    .bag-notification-wrapper {
+        height: 180px;
+    }
 }
 
 @media (max-width: 460px) {
     .animated {
-      opacity: 1;
-      -webkit-animation: none;
-      animation: none; 
+        opacity: 1;
+        -webkit-animation: none;
+        animation: none; 
     }
 
     /* Navbar */
     .navbar-toggler {
         margin: 0 auto;
     }
-  }
+}
 
