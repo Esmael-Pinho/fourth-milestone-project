@@ -9,13 +9,9 @@
                     <div class="col-lg-6">
                         <div class="modal-img-container w-75">
                             {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="image-fluid card-img-top card-img" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
+                                <img class="image-fluid card-img-top card-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                             {% else %}
-                                <a href="">
-                                    <img class="card-img-top " src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                </a>
+                                <img class="card-img-top " src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                             {% endif %}
                         </div>
                     </div>

@@ -12,7 +12,7 @@
             "image": "fresh_kiwi.jpg"
         }
     },
-      {
+    {
         "pk": 2,
         "model": "products.product",
         "fields": {
@@ -1238,15 +1238,14 @@
         "pk": 96,
         "model": "products.product",
         "fields": {
-          "name": "Homestyle Apple Pie",
-          "description": "A classic homestyle apple pie with a flaky crust and cinnamon-spiced apple filling.",
-          "price": 17.99,
-          "category": 6,
-          "rating": 4.8,
-          "image_url": "https://th.bing.com/th/id/OIP.aNG2cMHjJzteUNd0eOH6zgAAAA?rs=1&pid=ImgDetMain",
-          "image": "homestyle_apple_pie.jpg"
+            "name": "Homestyle Apple Pie",
+            "description": "A classic homestyle apple pie with a flaky crust and cinnamon-spiced apple filling.",
+            "price": 17.99,
+            "category": 6,
+            "rating": 4.8,
+            "image_url": "https://th.bing.com/th/id/OIP.aNG2cMHjJzteUNd0eOH6zgAAAA?rs=1&pid=ImgDetMain",
+            "image": "homestyle_apple_pie.jpg"
         }
     }
-      
-  ]
-  
+
+]
