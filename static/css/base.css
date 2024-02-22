@@ -435,6 +435,37 @@ main {
 }
 
 
+/* Scroll UP Arrow */
+
+#scrollUp {
+    background-color: #F7F5EB;
+    color: var(--black);
+    bottom: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    right: 3%;
+    text-align: center;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 0.1s ease 0s;
+    box-shadow: 0 2px 4px rgba(53, 150, 0, 0.4);
+    position: fixed;
+    z-index: 100;
+}
+
+a#scrollUp:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+
+#scrollUp i {
+    line-height: 40px;
+    transform: rotate(-45deg);
+}
+
 
 /* -------------------------------- Media Queries */
 
@@ -494,6 +525,18 @@ main {
     .bag-notification-wrapper {
         height: 180px;
     }
+
+    #scrollUp {
+        font-size: 16px;
+        height: 30px;
+        width: 30px;
+        bottom: 50px;
+    }
+
+    #scrollUp i {
+        line-height: 30px;
+    }
+    
 }
 
 @media (max-width: 460px) {

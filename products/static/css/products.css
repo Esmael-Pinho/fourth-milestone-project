@@ -390,38 +390,6 @@ sup {
     margin-bottom: 0.345rem;
 }
 
-
-#scrollUp {
-    background-color: #F7F5EB;
-    color: var(--black);
-    bottom: 70px;
-    font-size: 20px;
-    font-weight: bold;
-    height: 40px;
-    width: 40px;
-    right: 3%;
-    text-align: center;
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    transition: all 0.1s ease 0s;
-    box-shadow: 0 2px 4px rgba(53, 150, 0, 0.4);
-    position: fixed;
-    z-index: 100;
-}
-
-a#scrollUp:hover {
-   background-color: var(--green);
-   color: var(--white);
-}
-
-
-#scrollUp i {
-    line-height: 40px;
-    transform: rotate(-45deg);
-}
-
-
-
 /* Media Queries */
 @media (min-width: 992px) {
     .button-green {
@@ -488,18 +456,6 @@ a#scrollUp:hover {
         margin: 0 auto;
         width: 50% !important;
     }
-
-    #scrollUp {
-        font-size: 16px;
-        height: 30px;
-        width: 30px;
-        bottom: 50px;
-    }
-
-    #scrollUp i {
-        line-height: 30px;
-    }
-    
 }
 
 @media (min-width: 330px) {

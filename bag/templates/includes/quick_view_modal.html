@@ -20,10 +20,10 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div class="rating-container">
+                        <div class="rating-container text-center">
                             <div class="text-center">
                                 {% if product.rating %}
-                                    <small class="list-unstyled">( {{ product.rating }} / 5 )</small>
+                                    <h6 class="list-unstyled text-black">Rating: ( {{ product.rating }} / 5 )</h6>
                                 {% else %}
                                     <small class="text-muted">No Rating</small>
                                 {% endif %}
@@ -31,23 +31,23 @@
                         </div>
                         <div class="name-container">
                             <div class="text-center">
-                                <p class="modal-name green">
+                                <h4 class="green bold">
                                     {{ product.name }}
-                                </p>
+                                </h4>
                             </div>
                         </div>
                         <div class="price-container">
                             <div class="text-center">
-                                <p>
-                                    <span class="green">£{{ product.price }}</span>
+                                <h4>
+                                    <span class="green bold">£{{ product.price }}</span>
                                     <small><del class="red1">£{{ product.price|floatformat:2 }}</del></small>
-                                </p>
+                                </h4>
                             </div>
                         </div>
                         <div class="category-container">
                             <div class="text-center">
                                 <h6>
-                                    <small class="">Category:</small> {{ product.category.friendly_name }}
+                                    <small class="text-black">Category:</small> {{ product.category.friendly_name }}
                                 </h6>
                             </div>
                         </div>

@@ -21,22 +21,4 @@ $(document).ready(function() {
         }
     })
 
-    // Initially hide the scroll-up button
-    $('#scrollUp').hide();
-
-    // Show/hide the button based on scroll position
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 200) { 
-            $('#scrollUp').fadeIn();
-        } else {
-            $('#scrollUp').fadeOut();
-        }
-    });
-
-    // Smooth scrolling when clicking on the button
-    $('#scrollUp').click(function() {
-        $('html, body').animate({ scrollTop: 0 }, 'slow');
-        return false;
-    });
-    
 });

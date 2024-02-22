@@ -156,8 +156,8 @@
                                             <li class="text-center">
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#viewModal" 
                                                 data-product-id="{{ product.id }}" data-product-name="{{ product.name }}" 
-                                                data-product-image="{{ product.image.url }}" data-product-rating="{{ product.rating }}" 
-                                                data-product-price="{{ product.price }}" data-product-category="{{ product.category.friendly_name }}" 
+                                                data-product-image="{{ product.image.url }}" data-product-rating="Rating: ( {{ product.rating }} / 5 )" 
+                                                data-product-price="{{ product.price }}" data-product-category="Category: {{ product.category.friendly_name }}" 
                                                 data-product-description="{{ product.description }}" 
                                                 data-product-discounted-price="{{ product.price|add:product.price|floatformat:2 }}"
                                                 data-product-id="{{ product.id }}"
@@ -284,9 +284,9 @@
                 var productId = triggerButton.getAttribute('data-product-id');
                 var modal = viewModal._element;
                 modal.querySelector('.modal-img-container img').src = $(triggerButton).data('product-image');
-                modal.querySelector('.modal-name').textContent = $(triggerButton).data('product-name');
+                modal.querySelector('.green').textContent = $(triggerButton).data('product-name');
                 modal.querySelector('.price-container .green').textContent = '£' + $(triggerButton).data('product-price');
-                modal.querySelector('.category-container .green').textContent = $(triggerButton).data('product-category');
+                modal.querySelector('.category-container .text-black').textContent = $(triggerButton).data('product-category');
                 modal.querySelector('.modal-description-container h6').textContent = $(triggerButton).data('product-description');
                 modal.querySelector('.price-container .red1').textContent = '£' + $(triggerButton).data('product-discounted-price');
                 modal.querySelector('.rating-container').textContent =  $(triggerButton).data('product-rating');
