@@ -154,14 +154,26 @@
                                     <div class="product-hover-action ">
                                         <ul class="list-unstyled ">
                                             <li class="text-center">
-                                                <a href="{% url 'product_detail' product.id %}" title="Quick View">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#viewModal" 
+                                                data-product-id="{{ product.id }}" data-product-name="{{ product.name }}" 
+                                                data-product-image="{{ product.image.url }}" data-product-rating="{{ product.rating }}" 
+                                                data-product-price="{{ product.price }}" data-product-category="{{ product.category.friendly_name }}" 
+                                                data-product-description="{{ product.description }}" 
+                                                data-product-discounted-price="{{ product.price|add:product.price|floatformat:2 }}"
+                                                data-product-id="{{ product.id }}"
+                                                data-product-rating="{{ product.rating }}">
                                                     <i class="far fa-eye"></i>
                                                 </a>
                                             </li>
                                             <li class="text-center">
-                                                <a href="" title="Add to Cart">
-                                                    <i class="fas fa-shopping-cart"></i>
-                                                </a>
+                                                <form id="add-to-cart-form_{{ product.id }}" class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+                                                    {% csrf_token %}
+                                                    <input type="number" name="quantity" value="1" style="display: none;">
+                                                    <a href="#" title="Add to Bag" class="add-to-cart-link" data-product-id="{{ product.id }}" >
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                    <input type="hidden" name="redirect_url" value="{{ request.get_full_path }}">
+                                                </form>
                                             </li>
                                         </ul>
                                     </div>
@@ -240,9 +252,46 @@
     <div>
         <a id="scrollUp" class="text-decoration-none" href="#top" title="Back to Top"><i class="fa-solid fa-angle-up"></i></a>
     </div>
+    {% include 'includes/quick_view_modal.html' %}
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
     <script type="text/javascript" src="{% static 'js/products.js'%}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Handle click event for add to cart link
+            $('.add-to-cart-link').click(function (e) {
+                e.preventDefault(); // Prevent the default link behavior
+                
+                var productId = $(this).data('product-id');
+                var form = $(`#add-to-cart-form_${productId}`);
+    
+                // Submit the form
+                form.submit();
+    
+                // Open the modal
+                $('#addToCartModal').modal('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            var viewModal = new bootstrap.Modal(document.getElementById('viewModal'));
+    
+            viewModal._element.addEventListener('show.bs.modal', function (event) {
+                var triggerButton = event.relatedTarget;
+                var productId = triggerButton.getAttribute('data-product-id');
+                var modal = viewModal._element;
+                modal.querySelector('.modal-img-container img').src = $(triggerButton).data('product-image');
+                modal.querySelector('.modal-name').textContent = $(triggerButton).data('product-name');
+                modal.querySelector('.price-container .green').textContent = '£' + $(triggerButton).data('product-price');
+                modal.querySelector('.category-container .green').textContent = $(triggerButton).data('product-category');
+                modal.querySelector('.modal-description-container h6').textContent = $(triggerButton).data('product-description');
+                modal.querySelector('.price-container .red1').textContent = '£' + $(triggerButton).data('product-discounted-price');
+                modal.querySelector('.rating-container').textContent =  $(triggerButton).data('product-rating');
+            });
+        });
+    </script>
+    
 {% endblock %}

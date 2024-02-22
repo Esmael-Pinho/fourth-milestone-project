@@ -1,0 +1,66 @@
+<div class="modal fade modal-lg" id="viewModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="deleteModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="modal-img-container w-75">
+                            {% if product.image %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="image-fluid card-img-top card-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                </a>
+                            {% else %}
+                                <a href="">
+                                    <img class="card-img-top " src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="rating-container">
+                            <div class="text-center">
+                                {% if product.rating %}
+                                    <small class="list-unstyled">( {{ product.rating }} / 5 )</small>
+                                {% else %}
+                                    <small class="text-muted">No Rating</small>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="name-container">
+                            <div class="text-center">
+                                <p class="modal-name green">
+                                    {{ product.name }}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <div class="text-center">
+                                <p>
+                                    <span class="green">£{{ product.price }}</span>
+                                    <small><del class="red1">£{{ product.price|floatformat:2 }}</del></small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="category-container">
+                            <div class="text-center">
+                                <h6>
+                                    <small class="">Category:</small> {{ product.category.friendly_name }}
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="modal-description-container">
+                            <div class="text-center">
+                                <h6>
+                                    {{ product.description }}
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
