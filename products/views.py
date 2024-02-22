@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.http import Http404
+
 
 from .models import Product, Category
 
@@ -60,9 +62,12 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ A view to show individual product details """
-
-    product = get_object_or_404(Product, pk=product_id)
+    try:
+        # Check if product_id is a valid integer
+        product = Product.objects.get(pk=int(product_id))
+    except (ValueError, Product.DoesNotExist):
+        # Raise a 404 error if the ID is not valid or the product doesn't exist
+        raise Http404("Product not found")
 
     context = {
         'product': product,

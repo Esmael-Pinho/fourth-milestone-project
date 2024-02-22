@@ -156,7 +156,12 @@
                                             <li class="text-center">
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#viewModal" 
                                                 data-product-id="{{ product.id }}" data-product-name="{{ product.name }}" 
-                                                data-product-image="{{ product.image.url }}" data-product-rating="Rating: ( {{ product.rating }} / 5 )" 
+                                                {% if product.image %}
+                                                    data-product-image="{{ product.image.url }}"
+                                                {% else %}
+                                                    data-product-image="{{ MEDIA_URL }}noimage.png"
+                                                {% endif %}
+                                                data-product-rating="Rating: ( {{ product.rating }} / 5 )" 
                                                 data-product-price="{{ product.price }}" data-product-category="Category: {{ product.category.friendly_name }}" 
                                                 data-product-description="{{ product.description }}" 
                                                 data-product-discounted-price="{{ product.price|add:product.price|floatformat:2 }}"
