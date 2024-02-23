@@ -61,7 +61,8 @@
 }
 
 .check-bg,
-fieldset {
+fieldset,
+.order-confirmation-wrapper {
     background-color: #F7F5EB;;
     border-radius: 10px;
 }
