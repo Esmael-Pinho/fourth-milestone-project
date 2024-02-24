@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 text-center">
+                <h2 class="logo-font mb-4">Product Management:</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <h5 class="text-muted">Edit a Product</h5>
+            <div class="col-12 col-md-6 py-3 add-form-cont">
+                <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2 add-form" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="row mt-4"> 
+                        <div class="col-12">
+                            <div class="row justify-content-around">
+                                <div class="col-sm-12 col-lg-5 text-lg-start">
+                                    <button type="submit" class="btn button-green">
+                                        <span class="font-weight-bold">Update Product</span>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="col-sm-12 col-lg-5 text-lg-end">
+                                    <a href="{% url 'products' %}" class="btn button-green red">
+                                        <i class="fa-solid fa-angles-left"></i>
+                                        <span class="font-weight-bold">Cancel</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                 
+					</div>
+                </form>
+            </div>            
+        </div>
+    </div>
+{% endblock %}
