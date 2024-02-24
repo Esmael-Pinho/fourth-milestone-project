@@ -51,7 +51,7 @@
                                 </td>
                                 <td class="py-3 cart-product-info">
                                     <h6 class="my-0 bag-prod-name"><strong>{{ item.product.name }}</strong></h6>
-                                    <p class="pt-2 d-none d-lg-block">{{ item.product.description }}</p>
+                                    <p class="pt-2 d-none d-lg-block">{{ item.product.description|truncatechars:50 }}</p>
                                 </td>
                                 <td class="py-3">
                                     <h6 class="my-0 cart-price">£{{ item.product.price }}</h6>
