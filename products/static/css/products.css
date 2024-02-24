@@ -367,11 +367,6 @@ sup {
     margin-right: 0;
 }
 
-.back-btn {
-    font-size: 16px;
-    background-color: var(--black);
-}
-
 .small {
     margin: 0;
     font-size: 15px;

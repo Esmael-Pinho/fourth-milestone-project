@@ -31,7 +31,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
 {% else %}
 <p>{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+<a class="log-reg-a-link" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
 {% endif %}
 
 <form class="login" method="POST" action="{% url 'account_login' %}">
@@ -40,10 +40,10 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <a class="btn btn-outline-black rounded-0 btn-bg-white" href="{% url 'home' %}">Home</a>
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+  <a class="btn button-green back-btn mt-1" href="{% url 'home' %}"><i class="fa-solid fa-angles-left"></i> Home</a>
+  <button class="btn button-green mt-1" type="submit">{% trans "Sign In" %} <i class="fa-solid fa-angles-right"></i></button>
   <p class="mt-2">
-    <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+    <a class="button secondaryAction log-reg-a-link" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
   </p>
 </form>
 

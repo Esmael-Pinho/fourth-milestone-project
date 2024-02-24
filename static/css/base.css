@@ -473,68 +473,56 @@ a#scrollUp:hover {
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    color: #6c757d;
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: var(--green);
     border-radius: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    box-shadow: 0 1px 3px 0 var(--green);
+}
+
+.form-check-input:checked {
+    background-color: var(--green);
+    border-color: var(--green);
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
 }
 
-.btn-bg-white {
-    background-color: var(--black);
+.btn-color .btn-color-1 {
     color: var(--white);
 }
 
-.btn-bg-white:hover {
-    background-color: var(--black);
-    color: var(--white);
+.btn-color .btn-color-1:hover {
+    color: var(--green);
 }
 
 .allauth-form-inner-content input::placeholder {
     color: #aab7c4;
+    font-weight: 600;
 }
 
-.allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0;
-
-    /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+.button-green i {
+    visibility: hidden;
 }
 
-.allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
+.button-green:hover i {
+    visibility: visible;
 }
 
-.allauth-form-inner-content a {
-	color: #17a2b8; 
+.back-btn {
+    font-size: 16px;
+    background-color: var(--black);
 }
 
+.allauth-form-inner-content .log-reg-a-link:hover {
+    color: var(--green);
+}
 
 
 /* -------------------------------- Media Queries */
