@@ -114,16 +114,16 @@
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
 
-                    <div class="row submit-button mt-5 mb-2"> 
+                    <div class="row submit-button mt-4 mb-2"> 
                         <div class="col-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-lg-5 justify-content-start check-margin-sm">
+                            <div class="row justify-content-around">
+                                <div class="col-sm-12 col-lg-5 text-lg-start">
                                     <a href="{% url 'view_bag' %}" class="btn button-green text-uppercase back-btn">
                                         <i class="fa-solid fa-angles-left"></i>
                                         <span class="font-weight-bold">go back</span>
                                     </a>
                                 </div>
-                                <div class="col-sm-12 col-lg-5 justify-content-end">
+                                <div class="col-sm-12 col-lg-5 text-lg-end">
                                     <button id="submit-button" class="btn button-green">
                                         <span class="font-weight-bold">Complete Order</span>
                                         <span class="icon">

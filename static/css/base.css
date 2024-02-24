@@ -484,7 +484,7 @@ a#scrollUp:hover {
 .add-form select {
     border-color: var(--green);
     border-radius: 0;
-    margin-bottom: 1rem;
+    margin-bottom: .875rem;
     font-weight: 600;
     border: 1px solid var(--green);
 }
@@ -497,6 +497,15 @@ a#scrollUp:hover {
 .add-form select:focus
 .add-form select:active {
     box-shadow: 0 1px 3px 0 var(--green);
+}
+
+.add-form-cont {
+    background-color: #F7F5EB;;
+    border-radius: 10px;
+}
+
+.add-form textarea {
+    height: 90px;
 }
 
 .form-check-input:checked {
