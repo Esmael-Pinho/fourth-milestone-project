@@ -1,17 +1,35 @@
 #profile-update-form .form-control {
     color: #000;
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
+    border: 1px solid var(--green);
+}
+
+#profile-update-form input {
+    font-weight: 600;
 }
 
 #profile-update-form input::placeholder {
     color: #aab7c4;
+    font-weight: 600;
 }
 
 #id_default_country,
 #id_default_country option:not(:first-child) {
     color: #000;
+    font-weight: 600;
 }
 
 #id_default_country option:first-child {
     color: #aab7c4;
+    font-weight: 600;
+}
+
+.info-update-container {
+    background-color: #F7F5EB;;
+    border-radius: 10px;
+}
+
+.upd-btn {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
