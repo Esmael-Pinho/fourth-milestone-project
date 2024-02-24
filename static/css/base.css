@@ -477,11 +477,25 @@ a#scrollUp:hover {
     color: #6c757d;
 }
 
-.allauth-form-inner-content input {
+.allauth-form-inner-content input,
+.add-form input,
+.add-form option,
+.add-form textarea,
+.add-form select {
     border-color: var(--green);
     border-radius: 0;
     margin-bottom: 1rem;
     font-weight: 600;
+    border: 1px solid var(--green);
+}
+
+.allauth-form-inner-content input,
+.add-form input:focus,
+.add-form input:active,
+.add-form textarea:focus,
+.add-form textarea:active,
+.add-form select:focus
+.add-form select:active {
     box-shadow: 0 1px 3px 0 var(--green);
 }
 
@@ -502,7 +516,8 @@ a#scrollUp:hover {
     color: var(--green);
 }
 
-.allauth-form-inner-content input::placeholder {
+.allauth-form-inner-content input::placeholder,
+.add-form input::placeholder {
     color: #aab7c4;
     font-weight: 600;
 }
