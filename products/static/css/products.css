@@ -263,7 +263,7 @@
     margin-top: 1.5rem;
 }
 
-.ratings a {
+.ratings i {
     color: var(--orange);
 }
 
@@ -277,7 +277,10 @@
     color: var(--red);
 }
 
-.product-rating ul,
+.btn-edit {
+    color: var(--blue);
+}
+
 .product-title-area h2 {
     margin-bottom: 0;
 }
@@ -320,12 +323,6 @@ sup {
 
 .add-to-cart-section {
     margin-top: 1rem;
-}
-
-.ratings-section {
-    position: relative;
-    top: 2px;
-    left: 39%;
 }
 
 .details-name-title {

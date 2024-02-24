@@ -41,20 +41,31 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="product-details-container mt-5 mb-4">
-                    <div class="col-sm-12 col-md-6 col-4 text-center pt-1 ratings-section align-center">
-                        {% if product.rating %}
-                            <ul class="list-unstyled d-flex ratings m-auto">
-                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
-                                <li><a href="#"><i class="far fa-star"></i></a></li>
-                            </ul>
-                            <span class="text-muted list-unstyled d-flex">( {{ product.rating }} / 5 )</span>
-                        {% else %}
-                            <small class="text-muted">No Rating</small>
-                        {% endif %}
+                <div class="row product-details-container mt-5 mb-4">
+                    <div class="col-sm-12 pt-1 ">
+                        <div class="row justify-content-start">
+                            <div class="col-6">
+                                {% if product.rating %}
+                                    <p class="ratings">
+                                        Rating: <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i> {{ product.rating }} / 5 
+                                    </p>
+                                {% else %}
+                                    <small class="text-muted">No Rating</small>
+                                {% endif %}
+                            </div>
+                            <div class="col-6">
+                                {% if request.user.is_superuser %}
+                                    <span>
+                                        <a class="btn btn-sm text-info" href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                        <a class="btn btn-sm text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                    </span>
+                                {% endif %}
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-12 col-lg-10">
                         <div class="name-section text-center">
@@ -97,19 +108,25 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-12 col-lg-5 p-0 mt-3">
-                                        <div class="div text-center pt-1">
-                                            <a href="{% url 'products' %}" title="Keep Shopping" aria-label="Go back" class="btn btn-sm button-green text-uppercase back-btn">
-                                                <i class="fa-solid fa-angles-left"></i> 
-                                                go back
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-lg-5 mt-3 p-0">
-                                        <div class="div add-to-cart">
-                                            <button type="submit" aria-label="Add to Cart" class="btn btn-sm button-green text-uppercase add-btn">
-                                                add to cart
-                                            </button>
+                                    <div class="row">
+                                        <div class="col-11">
+                                            <div class="row justify-content-around">
+                                                <div class="col-sm-12 col-lg-5 p-0 mt-3">
+                                                    <div class="div text-center">
+                                                        <a href="{% url 'products' %}" title="Keep Shopping" aria-label="Go back" class="btn btn-sm button-green text-uppercase back-btn">
+                                                            <i class="fa-solid fa-angles-left"></i> 
+                                                            go back
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-lg-5 mt-3 p-0">
+                                                    <div class="div add-to-cart">
+                                                        <button type="submit" aria-label="Add to Cart" class="btn btn-sm button-green text-uppercase add-btn">
+                                                            add to cart
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <input type="hidden" name="redirect_url" value="{{ request.get_full_path }}">

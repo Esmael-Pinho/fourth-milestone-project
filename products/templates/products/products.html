@@ -216,7 +216,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="product-title-area text-center">
-                                                <h2 class="product-title d-flex"><a href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h2>
+                                                <h2 class="product-title d-flex"><a href="{% url 'product_detail' product.id %}">{{ product.name|truncatechars:25 }}</a></h2>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -226,6 +226,12 @@
                                             </div>                                                                
                                         </div>
                                     </div>
+                                    {% if request.user.is_superuser %}
+                                        <span>
+                                            <a class="text-info" href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                        </span>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
