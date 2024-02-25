@@ -43,7 +43,7 @@ function sendEmail(contactForm) {
                 $("#contact-btn").text("Msg Sent");
                 resetForm();
                 showThankYou(); // Corrected function name
-                $("#contact-modal").show(); // Show the modal using Bootstrap modal("show")
+                $("#contact-modal").show(); // Show the modal ("show")
             },
             function (error) {
                 console.log("FAILED", error);

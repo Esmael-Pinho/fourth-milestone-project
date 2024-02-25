@@ -1,6 +1,6 @@
 ![Mini M](/readMe/content/web-icon.png)
 
-## Milestone Project 4 
+## Mini M - Milestone Project 4 
 
 ![Responsive-app]()
 
@@ -284,12 +284,20 @@ Footer follows the same principle as the navbar, responsive on all screens, with
 ## Issues 
 Search-Bbar
 - When submitting an empty search, the toast hides on the right conner for some reason, no message get's displayed.
-![Search-bar](/readMe/errors/searc-bar-error.png)
+[Search-bar](/readMe/errors/searc-bar-error.png)
 - (Issue sorted, as needed to change elements as was using a different version, and was causing erros.)
 
 Contact
-- Submit button, keeps displaying the modal, even thought no form submition was triggered.
-![Submit-btn](/readMe/errors/submit-btn-error.png)
+| **Submit Button** |
+|----------|
+
+| **Submit button, keeps displaying the modal, even thought no form submition was triggered** | **![Submit-btn](/readMe/errors/submit-btn-error.png)** | **On the javascript to activate, display the modal i've set it up to keep the modal hidden, until the form gets submited but keeps on displaying regarless, as as soon the button is clicked.** |
+|----------|----------|------------|
+
+| **Code** |
+|----------|
+| ![code](/readMe/errors/contact-modal-error.png)
+
 
 # Deployment
 
@@ -337,7 +345,7 @@ Forks are used to propose changes to someone else's project or to use someone el
 
 To Fork a Github Repository:
 
-1. Log in to GitHub and go to the [GitHub Repository]()
+1. Log in to GitHub and go to the [GitHub Repository](https://github.com/Esmael-Pinho/fourth-milestone-project)
 2. Locate the Fork button in the top-right corner of the page, click Fork.
 3. You should now have a copy of the original repository in your GitHub account.
 
@@ -347,7 +355,7 @@ You will now have a fork of the repository, but you don't have the files in that
 
 To make a local clone:
 
-1. Log in to GitHub and go to the [GitHub Repository]()
+1. Log in to GitHub and go to the [GitHub Repository](https://github.com/Esmael-Pinho/fourth-milestone-project)
 2. Above the list of files, click  Code.
 3. To clone the repository using HTTPS, under "Clone with HTTPS", click the 'Copy' icon. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the 'Copy' icon. To clone a repository using GitHub CLI, click Use GitHub CLI, then click the 'Copy' icon.
 4. Open Git Bash.
