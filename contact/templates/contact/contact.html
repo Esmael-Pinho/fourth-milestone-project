@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_title %}
+    | Contact
+{% endblock %}
+
     {% block corecss %}
     {{ block.super }}
         <link rel="stylesheet" href="{% static 'css/contact.css' %}">

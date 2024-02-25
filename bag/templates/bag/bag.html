@@ -2,6 +2,10 @@
 {% load static %}
 {% load bag_tools %}
 
+{% block extra_title %}
+    | Bag
+{% endblock %}
+
     {% block corecss %}
     {{ block.super }}
         <link rel="stylesheet" href="{% static 'css/bag.css' %}">
