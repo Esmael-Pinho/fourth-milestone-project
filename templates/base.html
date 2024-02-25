@@ -115,7 +115,7 @@
                             <a href="{% url 'add_product' %}" class="dropdown-item ps-0">Product Management</a>
                         {% endif %}
                         <a href="{% url 'profile' %}" class="dropdown-item ps-2">My Profile</a>
-                        <a href="{% url 'account_logout' %}" class="dropdown-item ps-2">Logout</a>
+                        <a href="{% url 'account_logout' %}" class="dropdown-item ps-2">Sign Out - <span class="text-danger">{{ user.username }}</span></a>
                         {% else %}
                         <a href="{% url 'account_signup' %}" class="dropdown-item ps-2">Register <i class="fa-solid fa-user-plus"></i></a>
                         <a href="{% url 'account_login' %}" class="dropdown-item ps-2">Login</a>

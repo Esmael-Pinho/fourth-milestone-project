@@ -1,4 +1,4 @@
-![Mini M]()
+![Mini M](/readMe/content/web-icon.png)
 
 ## Milestone Project 4 
 
@@ -14,7 +14,7 @@
 
 ## Repository
 
-[Find the project repository here.]()
+[Find the project repository here.](https://github.com/Esmael-Pinho/fourth-milestone-project)
 
 # Table of Contents
 
@@ -85,7 +85,7 @@
 
 ### Colour Scheme
 A combination of very bright and primary color, to get a litle attencion.! 
-![My color pallete](/)
+![My color pallete](/readMe/content/Mini-M-coolors.png)
 
 ### Typography
 
@@ -106,43 +106,74 @@ A combination of very bright and primary color, to get a litle attencion.!
 
 # Wireframe
 
-- [View my wireframe](/).
+- [View my wireframe](/readMe/wireframe/mini-m-wireframe.pdf).
 
 # Features
 
 ## All Pages Features
 
+### Register and Log In Pages
+- The Log in form features input fields for Username and Password. All fields are required.
+![Login Page](/readMe/content/login.png)
+- The Register and Log in pages both feature forms, a login and register buttons, and a link to the other page in case a user is in the wrong place. E.g. on the Register Page, it says "Already Registered? Log in here."
+![Register Page](/readMe/content/register.png)
+- The Register form features input fields for Username, User Name, email and Password. All fields are required.
+
+### Intro-Page
+- 
+ ![Intro-page](/readMe/content/home-page.png)
+
 ### NavBar
-Nav structure, simple, responsive, compose of a logo,
-![Navbar](.)
-
-
-### Footer 
-Footer follows the same principle as the navbar, responsive on all screens, with three sections, the app name, some social links and contact button.
-![Footer]()
- 
-
- ### Intro-Page
- .
- ![Intro-page](.)
-
+- Nav structure, simple, responsive, compose of a logo,
+![Navbar](/readMe/content/nav-bar.png)
 
  ### Home-Page
  The home page, is where user can view the products..
 
+### Products-Page
+Products:
+- 
+![Products](/)
 
-## Register and Log In Pages
-- The Log in form features input fields for Username and Password. All fields are required.
-![Login Page](./)
-- The Register and Log in pages both feature forms, a login and register buttons, and a link to the other page in case a user is in the wrong place. E.g. on the Register Page, it says "Already Registered? Log in here."
-![Register Page](./)
-- The Register form features input fields for Username, User Name, email and Password. All fields are required.
 
+Products-details:
+- 
+![Product-details](/)
 
 ### Contact-Page
 - Contact page to allow users to send a message, feedback, a comment, some ideas or complains,or simply a hello message, about the app. It has a form requiring a name, a textarea, for the subject, reason they are contacting. After the form submition, a thank you message will display.
-![Contact-page](./)
-![Contact-with-message](./)
+![Contact-page](/readMe/content/contact-page.png)
+![Contact-with-message](/readMe/content/contact-with-message.png)
+
+### Bag-Page
+Bag:
+- 
+![Bag]()
+
+
+Checkout:
+- 
+![Checkout](/)
+
+
+Checkout-success:
+- 
+![Checkout-success](/)
+
+
+### Product-Management-Page
+Add-Product:
+- 
+![Add-Product](/)
+
+
+Edit-Product:
+- 
+![Edit-Product]()
+
+### Footer 
+Footer follows the same principle as the navbar, responsive on all screens, with three sections, the app name, some social links and contact button.
+![Footer](/readMe/content/footer.png)
 
 # Future Features
 
@@ -251,6 +282,7 @@ Footer follows the same principle as the navbar, responsive on all screens, with
 Search-Bbar
 - When submitting an empty search, the toast hides on the right conner for some reason, no message get's displayed.
 ![Search-bar](/readMe/errors/searc-bar-error.png)
+- (Issue sorted, as needed to change elements as was using a different version, and was causing erros.)
 
 Contact
 - Submit button, keeps displaying the modal, even thought no form submition was triggered.

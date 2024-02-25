@@ -481,7 +481,8 @@ a#scrollUp:hover {
 .add-form input,
 .add-form option,
 .add-form textarea,
-.add-form select {
+.add-form select,
+#password-help {
     border-color: var(--green);
     border-radius: 0;
     margin-bottom: .875rem;
@@ -489,12 +490,16 @@ a#scrollUp:hover {
     border: 1px solid var(--green);
 }
 
+#password-help {
+    box-shadow: 0 1px 3px 0 var(--green);
+}
+
 .allauth-form-inner-content input,
 .add-form input:focus,
 .add-form input:active,
 .add-form textarea:focus,
 .add-form textarea:active,
-.add-form select:focus
+.add-form select:focus,
 .add-form select:active {
     box-shadow: 0 1px 3px 0 var(--green);
 }
