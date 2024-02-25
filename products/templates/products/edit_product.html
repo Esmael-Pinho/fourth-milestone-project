@@ -18,8 +18,8 @@
             </div>
         </div>
 
-        <div class="row">
-            <h5 class="text-muted">Edit a Product</h5>
+        <div class="row justify-content-center">
+            <h5 class="text-muted text-center">Edit a Product</h5>
             <div class="col-12 col-md-6 py-3 add-form-cont">
                 <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2 add-form" enctype="multipart/form-data">
                     {% csrf_token %}

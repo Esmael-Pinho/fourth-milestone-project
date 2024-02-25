@@ -120,25 +120,25 @@ A combination of very bright and primary color, to get a litle attencion.!
 - The Register form features input fields for Username, User Name, email and Password. All fields are required.
 
 ### Intro-Page
-- 
+- The Intro page displays, a carousel, highlighting the contents available os the site, with buttons directing to them.
  ![Intro-page](/readMe/content/home-page.png)
 
 ### NavBar
-- Nav structure, simple, responsive, compose of a logo,
+- Nav structure, simple, responsive, compose of a logo, nav-links, with dropdowns, proving access to different products, either by price, category, rating, or simply access all the products regardless. Icons - search, profile, and bag - allowing the user easily access, according to they needs. 
 ![Navbar](/readMe/content/nav-bar.png)
 
- ### Home-Page
+ ## Home-Page
  The home page, is where user can view the products..
-
 ### Products-Page
 Products:
-- 
-![Products](/)
+- At the top, it displays, a delivery banner, container, alerting the user, of a free delivery soon.
+- The page will display, collums of the products in a card styling, with name, rating, price, discounted price. When hovering over the cards, it will display two buttons, a quick view, that shows the product with it's description, and a add to bag button, allowing to user a quick add to bag option - it adds onw item at a time. Clicking on the product it takes you to the product-details page.
+![Products](/readMe/content/products-page.png)
 
 
 Products-details:
-- 
-![Product-details](/)
+- The page displays on the left the product image, and on the right it's price, name, rating at the top, a increment button allowing the user to choose the required amount they need, following by a return back and a add to bag buttons. Clickin on the image, it opens a new window, displaying the images as a full.
+![Product-details](/readMe/content/product-detail.png)
 
 ### Contact-Page
 - Contact page to allow users to send a message, feedback, a comment, some ideas or complains,or simply a hello message, about the app. It has a form requiring a name, a textarea, for the subject, reason they are contacting. After the form submition, a thank you message will display.
@@ -147,29 +147,32 @@ Products-details:
 
 ### Bag-Page
 Bag:
-- 
-![Bag]()
+- The page as a table content that displays the products in the order, with it;s image on the left, product info, followed by the price, the quantity of the same products, and a subtotal. At the bottom, another table content providing more info about the delivery fee, as well as the final price, with or without the delivery, if included. A go back button and a checkotut button, allowing you to proceed with your order.
+![Bag](/readMe/content/shopping-bag.png)
 
 
 Checkout:
-- 
-![Checkout](/)
+- The page displays, a form for the user details, along with some info regarding the delivery. With a payment at the bottom, accepting different types of cards. 
+On the right side, it displays to the buyer a final recap of the order that's about to be made, as a final check in case something needs to be changed.
+![Checkout](/readMe/content/checkout-1.png)
+![Checkout](/readMe/content/checkout-2.png)
 
 
 Checkout-success:
-- 
-![Checkout-success](/)
+- The page displays the order information, along with the order number and the order date. Has a "Keep shopping" button to direct the user back to the products page.
+![Checkout-success](/readMe/content/checkout-success.png)
 
 
 ### Product-Management-Page
+For the superUsers
 Add-Product:
-- 
-![Add-Product](/)
+- A form with the products fiels, name, description, price, rating, img and image-url. Filling those fiels and clicking "add product" will then display a success message, if the actions was indeed successful and direct them to the page with the new product created.
+![Add-Product](/readMe/content/add-product.png)
 
 
 Edit-Product:
-- 
-![Edit-Product]()
+- A form with the products fiels, name, description, price, rating, img and image-url. Filling those fiels and clicking "edit product" will then display a success message, if the actions was indeed successful and direct them to the page with the updated product. Displaying a message alerting the user that it's about to edit a product.
+![Edit-Product](/readMe/content/edit-product.png)
 
 ### Footer 
 Footer follows the same principle as the navbar, responsive on all screens, with three sections, the app name, some social links and contact button.
@@ -181,8 +184,8 @@ Footer follows the same principle as the navbar, responsive on all screens, with
 
 # Data Model
 
-- [View my Database diagram structure here](/).
-- [Database created from workspace enviroment](/docs/readme/database/)
+- [View my Database diagram structure here](/readMe/database/PipeTracker_Database_Diagram.pdf).
+- [Database created from workspace enviroment](/readMe/database/my_models.png)
 
 # Technologies Used
 
