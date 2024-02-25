@@ -10,7 +10,7 @@
 
 ## Live Project
 
-[View the live project here.]()
+[View the live project here.](https://mini-m-3d8a36d1df66.herokuapp.com/)
 
 ## Repository
 
