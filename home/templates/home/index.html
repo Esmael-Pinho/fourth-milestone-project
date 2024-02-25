@@ -14,50 +14,50 @@
         <div class="row h-100">
             <div id="myCarousel" class="carousel slide mb-6 carousel-dark pointer-event" data-bs-ride="true">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="9000">
-                    <div class="row featurette justify-content-center">
-                        <div class="col-sm-10 col-lg-6">
-                            <img class="d-block w-100 slider-img img-1"  src="/media/slider-img-1.png" alt="Healthy Products">
-                        </div>
-                        <div class="col-sm-8 col-lg-5 text-center text-margin">
-                            <div class="row justify-content-center">
-                                <div class="col-sm-10 col-md-9">
-                                    <h6 class="slide-sub-title animated animation-1"><img src="/media/slider-icon.png" alt="Picture of Handmade Products"> 100% Organic Products</h6>
-                                    <h1 class="slide-title animated fw-normal lh-1 animation-2">Tasty & Healthy Organic Food</h1>
-                                </div>
+                    <div class="carousel-item active" data-bs-interval="9000">
+                        <div class="row featurette justify-content-center">
+                            <div class="col-sm-10 col-lg-6">
+                                <img class="d-block w-100 slider-img img-1"  src="/media/slider-img-1.png" alt="Healthy Products">
                             </div>
-                            <div class="row justify-content-center">
-                                <div class="col-sm-6 col-md-3">
-                                    <a href="{% url 'products' %}?category=fruits_and_vegetables" class="btn slide-btn button-green text-uppercase animated animation-3">Explore Products</a>
+                            <div class="col-sm-8 col-lg-5 text-center text-margin">
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-10 col-md-9">
+                                        <h6 class="slide-sub-title animated animation-1"><img src="/media/slider-icon.png" alt="Picture of Handmade Products"> 100% Organic Products</h6>
+                                        <h1 class="slide-title animated fw-normal lh-1 animation-2">Tasty & Healthy Organic Food</h1>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-6 col-md-3">
+                                        <a href="{% url 'products' %}?category=fruits_and_vegetables" class="btn slide-btn button-green text-uppercase animated animation-3">Explore Products</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="9000">
-                    <div class="row featurette justify-content-evenly">
-                        <div class="col-sm-8 col-lg-5 text-center text-margin order-lg-first">
-                            <div class="row justify-content-center">
-                                <div class="col-sm-10 col-md-9">
-                                    <h6 class="slide-sub-title animated animation-1"><img src="/media/slider-icon.png" alt="Picture of Handmade Drinks"> 100% Handmade Drinks</h6>
-                                    <h1 class="slide-title animated fw-normal lh-1 animation-2">Tasty & Healthy Organic Drinks</h1>
+                    <div class="carousel-item" data-bs-interval="9000">
+                        <div class="row featurette justify-content-evenly">
+                            <div class="col-sm-8 col-lg-5 text-center text-margin order-lg-first">
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-10 col-md-9">
+                                        <h6 class="slide-sub-title animated animation-1"><img src="/media/slider-icon.png" alt="Picture of Handmade Drinks"> 100% Handmade Drinks</h6>
+                                        <h1 class="slide-title animated fw-normal lh-1 animation-2">Tasty & Healthy Organic Drinks</h1>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-6 col-md-3">
+                                        <a href="{% url 'products' %}?category=drinks" class="btn slide-btn button-green text-uppercase animated animation-3">Explore Drinks</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row justify-content-center">
-                                <div class="col-sm-6 col-md-3">
-                                    <a href="{% url 'products' %}?category=drinks" class="btn slide-btn button-green text-uppercase animated animation-3">Explore Drinks</a>
-                                </div>
+                            <div class="col-sm-10 col-lg-6 order-first order-lg-last">
+                                <img class="d-block w-100 slider-img img-2"  src="/media/slider-img-2.png" alt="Healthy Drinks">
                             </div>
-                        </div>
-                        <div class="col-sm-10 col-lg-6 order-first order-lg-last">
-                            <img class="d-block w-100 slider-img img-2"  src="/media/slider-img-2.png" alt="Healthy Drinks">
                         </div>
                     </div>
-                  </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                     <i class="fa-solid fa-arrow-left"></i>
