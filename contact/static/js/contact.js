@@ -1,4 +1,4 @@
-
+/*jshint esversion: 6 */
 $("#contact-modal").hide();
 
 // Function to reset the form to its original state

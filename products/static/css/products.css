@@ -63,33 +63,34 @@
 
 .countdown-container {
     margin-top: 0;
-    padding: 15px 15px 0px;
+    padding: 15px 15px 0;
     box-shadow: none;
     display: inline-block;
-
-    .countdown {
-        margin-right: 10px;
-        margin-top: 10px;
-        text-align: center;
-        display: inline-block;
-
-        h3 {
-            font-size: 20px;
-            margin-bottom: 5px;
-            height: 35px;
-            width: 35px;
-            line-height: 35px;
-            background-color: var(--green);
-            border-radius: 100%;
-            color: var(--white);
-        }
-
-        p {
-            font-size: 15px;
-            text-transform: uppercase;
-        }
-    }
 }
+
+.countdown {
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.countdown h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    background-color: var(--green);
+    border-radius: 100%;
+    color: var(--white);
+}
+
+.countdown p {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
 
 .delivery-icon i {
     color: var(--yellow);
@@ -124,7 +125,7 @@
 }
 
 .product-container {
-    margin-top: 4rem auto;
+    margin-top: 4rem;
     gap: 3rem;
 }
 

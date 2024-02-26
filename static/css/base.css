@@ -127,7 +127,6 @@ main {
 }
 
 .button-green:hover {
-    background-color: var(--green);
     color: var(--green);
     border: 1px solid var(--green);
 }
@@ -278,10 +277,8 @@ main {
     color: var(--black);
 }
 
-.carousel-dark .carousel-indicators [data-bs-target] {
-    &.active {
-        background-color: var(--green);
-    }
+.carousel-dark .carousel-indicators [data-bs-target].active {
+    background-color: var(--green);
 }
 
 .carousel-control-prev,
@@ -310,13 +307,11 @@ main {
     right: auto;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    &:hover {
-        background-color: var(--green);
-        color: var(--white);
-        border: 1px solid var(--white);
-    }
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--white);
 }
 
 .carousel-control-prev:active,
@@ -327,8 +322,6 @@ main {
 
 .animated {
     opacity: 0;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-fill-mode: both;
     animation-duration: 1.5s;
     animation-fill-mode: both;
 }
@@ -355,25 +348,21 @@ main {
 
 @keyframes fadeInUp {
     0% {
-        -webkit-transform: translate3d(0, 450%, 0);
         opacity: 0;
         transform: translate3d(0, 450%, 0);
     }
 
     50% {
-        -webkit-transform: translate3d(0, 4350%, 0);
         opacity: 0;
         transform: translate3d(0, 350%, 0);
     }
 
     75% {
-        -webkit-transform: translate3d(0, 150%, 0);
         opacity: 0;
         transform: translate3d(0, 150%, 0);
     }
 
     100% {
-        -webkit-transform: translateZ(0);
         opacity: 1;
         transform: translateZ(0);
     }
@@ -515,7 +504,7 @@ a#scrollUp:hover {
 
 .form-check-input:checked {
     background-color: var(--green);
-    border-color: var(--green);
+    border-color: var(--dark-green);
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -572,12 +561,12 @@ a#scrollUp:hover {
 
 .custom-checkbox .custom-control-label::before {
     border-radius: 0;
-    border-color: #dc3545;
+    border-color: #7b0511;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #dc3545;
-    border-color: #dc3545;
+    border-color: #7b0511;
     border-radius: 0;
 }
 

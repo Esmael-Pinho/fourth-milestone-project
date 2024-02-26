@@ -65,7 +65,7 @@
             <a class="navbar-brand col-lg-3 me-0" href="{% url 'home' %}">
               <div class="row justify-content-lg-center pe-none">
                 <div class="col-7 pe-none">
-                  <img src="/media/mini-m-logo.png" alt="Mini Tic Logo" width="50" height="44" class="d-inline-block align-text-right pe-auto mt-2">
+                  <img src="{{ MEDIA_URL }}mini-m-logo.png" alt="Mini Tic Logo" width="50" height="44" class="d-inline-block align-text-right pe-auto mt-2">
                   <span class="text-center logo-text pe-auto my-0 ">Mini<strong class=" green glow-1"> M</strong></span>
                 </div>
               </div>
@@ -204,7 +204,7 @@
     </footer>
 
     {% block postloadjs %}
-      <script type="text/javascript" src="{% static 'js/base.js'%}"></script>
+      <script src="{% static 'js/base.js'%}"></script>
     {% endblock %}
 
     

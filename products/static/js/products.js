@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 $(document).ready(function() {
 
     $('#sort-selector').change(function() {
@@ -19,6 +20,6 @@ $(document).ready(function() {
 
             window.location.replace(currentUrl);
         }
-    })
+    });
 
 });

@@ -239,53 +239,8 @@ Footer follows the same principle as the navbar, responsive on all screens, with
   - Tool used to mock up database structure diagram.
 
 # Testing
-### W3C Validator
- - Main pages 
-
-| **** | **** | **** | **** | **** | **** |
-|-----------|-----------|--------------|-------------|----------|-----------|
-| ![](./) | ![](./) | ![](./) | ![](./) | ![](./) | ![](./) |
-|*  |*  |*  |*  |*  |*  |
----
-- Add/Edit pages and Css
-
-| **** | **** | **** | **** | **** |
-|------------------|-------------------|--------------|---------------|---------|
-| ![](./) | ![](./) | ![](./) | ![](./) | ![](./) |
-|*   |*   |*   |*   |*  |
-
-
-
-### JShint
-
-| **** | **Email.js** |
-|---------------|--------------|
-| ![](./) | ![Email test](./) |
-|*  |*  |
-
-
-### Lighthouse
- - Main pages 
-
-| **** | **** | **** | **** | **** | **** |
-|-----------|-----------|--------------|-------------|----------|-----------|
-| ![](./) | ![](./) | ![](./) | ![](./) | ![](./) | ![](./) |
-|*  |*  |*  |*  |*  |*  |
----
-- Add/Edit pages
-
-| **** | **** | **** | **** |
-|------------------|-------------------|--------------|---------------|
-| ![](./) | ![](./) | ![](./) | ![](./) | ![](./) |
-|*   |*   |*   |*   |
-
+[Testing](/TESTING.md)
 * *Note:  majority of performance and accessibility, were affected by the extensions I have on the browsers, affecting even on incognito mode.
-
-## Issues 
-Search-Bbar
-- When submitting an empty search, the toast hides on the right conner for some reason, no message get's displayed.
-[Search-bar](/readMe/errors/searc-bar-error.png)
-- (Issue sorted, as needed to change elements as was using a different version, and was causing erros.)
 
 Contact
 | **Submit Button** |
