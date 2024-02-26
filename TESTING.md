@@ -140,6 +140,30 @@ No errors were found for JavaScript code when passing through the official Jshin
 All other python files from all apps were successfully passed through the PEP8 validator.
 - Warning were about adding whitespace around operators: (+,-,/,==...)
 
+## Lighthouse
+ - Main pages 
+
+| **Login** | **Register** | **Home** | **Products** | **Contact** |
+|-----------|--------------|-------------|----------|--------------|
+| ![Login]() | ![Register]() | ![Home]() | ![Products]() | ![Contact]() |
+|* No issues found |* No issues found |* No issues found |* No issues found |* No issues found |
+---
+- Add/Edit Product Management
+
+| **Add_Product** | **Edit_Product** | **Product_Details** |
+|-----------------|------------------|---------------------|
+| ![Add_Product]() | ![Edit_Product]() | ![Product_Details]() |
+|* No issues found  |* No issues found  |* No issues found  |
+
+- Bag - Checkout - Checkout-Success - Profile Pages
+
+| **Bag** | **Checkout** | **Checkout-Success** | **Profile** |
+|---------|--------------|----------------------|-------------|
+| ![Bag]() | ![Checkout]() | ![Checjout-Success]() | ![Profile]() |
+|* No issues found  |* No issues found  |* No issues found  |* No issues found  |
+
+ *Note:  majority of performance and accessibility, were affected my the extensions I have on the browsers.
+
 
 ## Browser Compatibility
 

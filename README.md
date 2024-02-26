@@ -2,7 +2,7 @@
 
 ## Mini M - Milestone Project 4 
 
-![Responsive-app]()
+![Responsive-app](/readMe/content/am-i-responsive-mini-m.png)
 
 * Mini M is an app where users can purchase products, including handmade products. The website design is responsive so it can be used on any device.
 
@@ -251,7 +251,7 @@ Contact
 
 | **Code** |
 |----------|
-| ![code](/readMe/errors/contact-modal-error.png)
+| ![code](/readMe/errors/contact-modal-error.png) |
 
 
 # Deployment

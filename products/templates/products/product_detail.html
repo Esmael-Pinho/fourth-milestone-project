@@ -48,7 +48,7 @@
                 <div class="row product-details-container mt-5 mb-4">
                     <div class="col-sm-12 pt-1 ">
                         <div class="row justify-content-start">
-                            <div class="col-6">
+                            <div class="col-sm-8 col-lg-6">
                                 {% if product.rating %}
                                     <p class="ratings">
                                         Rating: <i class="fa-solid fa-star"></i>
@@ -61,7 +61,7 @@
                                     <small class="text-muted">No Rating</small>
                                 {% endif %}
                             </div>
-                            <div class="col-6">
+                            <div class="col-sm-4 col-lg-6">
                                 {% if request.user.is_superuser %}
                                     <span>
                                         <a class="btn btn-sm text-info" href="{% url 'edit_product' product.id %}">Edit</a> | 
@@ -123,9 +123,9 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-12 col-lg-5 mt-3 p-0">
+                                                <div class="col-sm-12 col-lg-5 mt-lg-3 mt-sm-1 p-0">
                                                     <div class="div add-to-cart">
-                                                        <button type="submit" aria-label="Add to Cart" class="btn btn-sm button-green text-uppercase add-btn">
+                                                        <button type="submit" aria-label="Add to Cart" class="btn btn-sm button-green text-uppercase add-btn ms-lg-3">
                                                             add to bag
                                                         </button>
                                                     </div>

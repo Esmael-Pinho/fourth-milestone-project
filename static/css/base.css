@@ -178,7 +178,7 @@ main {
 }
 
 @media (max-width: 576px) {
-    .delivery-icon i, .sliding-text {
+    .sliding-text {
         animation: none;
     }
 }
