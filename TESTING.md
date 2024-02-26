@@ -145,21 +145,21 @@ All other python files from all apps were successfully passed through the PEP8 v
 
 | **Login** | **Register** | **Home** | **Products** | **Contact** |
 |-----------|--------------|-------------|----------|--------------|
-| ![Login]() | ![Register]() | ![Home]() | ![Products]() | ![Contact]() |
+| ![Login](/readMe/testing/lighthouse/login-page.png) | ![Register](/readMe/testing/lighthouse/register-page.png) | ![Home](/readMe/testing/lighthouse/home-page.png) | ![Products](/readMe/testing/lighthouse/products-page.png) | ![Contact](/readMe/testing/lighthouse/contact-page.png) |
 |* No issues found |* No issues found |* No issues found |* No issues found |* No issues found |
 ---
 - Add/Edit Product Management
 
 | **Add_Product** | **Edit_Product** | **Product_Details** |
 |-----------------|------------------|---------------------|
-| ![Add_Product]() | ![Edit_Product]() | ![Product_Details]() |
+| ![Add_Product](/readMe/testing/lighthouse/add-product.png) | ![Edit_Product](/readMe/testing/lighthouse/edit-product.png) | ![Product_Details](/readMe/testing/lighthouse/products-details.png) |
 |* No issues found  |* No issues found  |* No issues found  |
 
 - Bag - Checkout - Checkout-Success - Profile Pages
 
 | **Bag** | **Checkout** | **Checkout-Success** | **Profile** |
 |---------|--------------|----------------------|-------------|
-| ![Bag]() | ![Checkout]() | ![Checjout-Success]() | ![Profile]() |
+| ![Bag](/readMe/testing/lighthouse/bag-page.png) | ![Checkout](/readMe/testing/lighthouse/checkout-page.png) | ![Checkout-Success](/readMe/testing/lighthouse/checkout-success.png) | ![Profile](/readMe/testing/lighthouse/profile-page.png) |
 |* No issues found  |* No issues found  |* No issues found  |* No issues found  |
 
  *Note:  majority of performance and accessibility, were affected my the extensions I have on the browsers.
@@ -177,7 +177,13 @@ All other python files from all apps were successfully passed through the PEP8 v
 | Mozilla       | ✔                         | ✔s                 | ✔                |
 
 ## Issues 
-Search-Bbar
+Search-Bar
 - When submitting an empty search, the toast hides on the right conner for some reason, no message get's displayed.
-[Search-bar](/readMe/errors/searc-bar-error.png)
+![Search-bar](/readMe/errors/searc-bar-error.png)
 - (Issue sorted, as needed to change elements as was using a different version, and was causing erros.)
+
+Contact-form
+- When clicking the submit form without any fields it triggers the modal to open, althought I've specify to keep hiden until the submit process gets completed.
+![Contact-form](/readMe/errors/submit-btn-error.png)
+code:
+![Contact-form-code](/readMe/errors/contact-modal-error.png)
