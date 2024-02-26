@@ -53,6 +53,18 @@
   + [Media Content](#media-content)
   + [Acknowledgements](#acknowledgements)
 
+*Note:
+
+*For Product Management Options please login with this user:
+
+| **Username:** | gita |
+|--------------|--------------|
+| **Password:** | original123 |
+
+For testing payments please use any of these:   
+![Payments Tests](/readMe/content/payments-test.png)
+
+
 # Shopper Experience
 
 ## Shopper stories
@@ -81,7 +93,7 @@
 
 ### Overview
 
-- The website design is playful, colourful and youthful. 
+- The website design is playfull and colourful
 
 ### Colour Scheme
 A combination of very bright and primary color, to get a litle attencion.! 

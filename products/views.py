@@ -77,6 +77,7 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+
 @login_required
 def add_product(request):
     """ Add a product to the store """
@@ -137,7 +138,7 @@ def delete_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store admin can do that.')
         return redirect(reverse('home'))
-    
+
     product  =  get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
