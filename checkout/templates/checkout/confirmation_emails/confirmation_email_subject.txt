@@ -1,1 +1,1 @@
-Mni M Confirmation for Order Number {{ order.order_number }}
+Mini M Confirmation for Order Number {{ order.order_number }}
