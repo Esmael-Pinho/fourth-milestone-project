@@ -34,7 +34,7 @@ class StripeWH_Handler:
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
         )
-
+        print(send_mail)
     def handle_event(self, event):
         """
         Handle a generic/unknown/unexpected webhook event
@@ -47,18 +47,19 @@ class StripeWH_Handler:
         """
         Handle the payment_intent.succeeded webhook from Stripe
         """
-        #Get Charge Obgject
-        stripe_charge = stripe.charge.retrieve(
-            intent.latest_charge
-        )
         intent = event.data.object
         pid = intent.id
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
 
-        billing_details = stripe_charge.billing_details
+        # Get the Charge object
+        stripe_charge = stripe.Charge.retrieve(
+            intent.latest_charge
+        )
+
+        billing_details = stripe_charge.billing_details # updated
         shipping_details = intent.shipping
-        grand_total = round(stripe_charge.amount / 100, 2)
+        grand_total = round(stripe_charge.amount / 100, 2) # updated
 
         # Clean data in the shipping details
         for field, value in shipping_details.address.items():
@@ -105,6 +106,7 @@ class StripeWH_Handler:
                 time.sleep(1)
         if order_exists:
             self._send_confirmation_email(order)
+            print(send_confirmation_email)
             return HttpResponse(
                 content=(f'Webhook received: {event["type"]} | SUCCESS: '
                         'Verified order already in database'),
@@ -142,6 +144,7 @@ class StripeWH_Handler:
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500)
         self._send_confirmation_email(order)
+        print(send_confirmation_email)
         return HttpResponse(
             content=(f'Webhook received: {event["type"]} | SUCCESS: '
                      'Created order in webhook'),
