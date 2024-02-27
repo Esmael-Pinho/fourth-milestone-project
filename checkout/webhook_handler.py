@@ -47,6 +47,10 @@ class StripeWH_Handler:
         """
         Handle the payment_intent.succeeded webhook from Stripe
         """
+        #Get Charge Obgject
+        stripe_charge = stripe.charge.retrieve(
+            intent.latest_charge
+        )
         intent = event.data.object
         pid = intent.id
         bag = intent.metadata.bag
