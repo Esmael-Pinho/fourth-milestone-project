@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 
     // Set the date we're counting down to
-    var countDownDate = new Date("Mar 31, 2075 16:00:00").getTime();
+    var countDownDate = new Date("Mar 31, 2035 16:00:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -45,7 +45,7 @@ $(document).ready(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        $("#days, #hours, #minutes, #seconds").html("Free delivery for all orders in effect");
+        $("#days, #hours, #minutes, #seconds").html("Free delivery ");
     }
     }, 1000);
 
